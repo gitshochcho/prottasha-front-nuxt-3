@@ -1,0 +1,160 @@
+{
+    "status": true,
+    "message": "Success.",
+    "data": [
+        {
+            "id": 8,
+            "node_name": "et",
+            "pid": 0,
+            "route_name": null,
+            "serials": 1,
+            "status": 1,
+            "icon": "far fa-calendar-minus",
+            "menus": [
+                {
+                    "id": 17,
+                    "node_name": "Test name",
+                    "pid": 8,
+                    "route_name": "ds",
+                    "serials": 2,
+                    "status": 1,
+                    "icon": "fas fa-upload",
+                    "menus": [
+                        {
+                            "id": 12,
+                            "node_name": "scsdsdwe",
+                            "pid": 17,
+                            "route_name": "sdsdsdwer",
+                            "serials": 3,
+                            "status": 1,
+                            "icon": "fas fa-upload",
+                            "menus": []
+                        },
+                        {
+                            "id": 13,
+                            "node_name": "scsdsdwe879",
+                            "pid": 17,
+                            "route_name": "sdsdsdwer",
+                            "serials": 4,
+                            "status": 1,
+                            "icon": "far fa-calendar-plus",
+                            "menus": []
+                        }
+                    ]
+                },
+                {
+                    "id": 10,
+                    "node_name": "scsd",
+                    "pid": 8,
+                    "route_name": null,
+                    "serials": 5,
+                    "status": 1,
+                    "icon": "fas fa-upload",
+                    "menus": [
+                        {
+                            "id": 6,
+                            "node_name": "Test2",
+                            "pid": 10,
+                            "route_name": "\/test",
+                            "serials": 6,
+                            "status": 1,
+                            "icon": "fa fa-angle",
+                            "menus": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "node_name": "sc",
+            "pid": 0,
+            "route_name": null,
+            "serials": 7,
+            "status": 0,
+            "icon": "fas fa-upload",
+            "menus": []
+        },
+        {
+            "id": 11,
+            "node_name": "test22323wewe",
+            "pid": 0,
+            "route_name": "\/test1212wewe",
+            "serials": 8,
+            "status": 0,
+            "icon": "far fa-bell-slash",
+            "menus": []
+        },
+        {
+            "id": 14,
+            "node_name": "scsdsdwe8792",
+            "pid": 0,
+            "route_name": "sdsdsdwer",
+            "serials": 9,
+            "status": 0,
+            "icon": "fas fa-upload",
+            "menus": []
+        },
+        {
+            "id": 15,
+            "node_name": "1sdwe81",
+            "pid": 0,
+            "route_name": "1sdwe81",
+            "serials": 10,
+            "status": 0,
+            "icon": "far fa-calendar-times",
+            "menus": []
+        },
+        {
+            "id": 16,
+            "node_name": "1sdwe814",
+            "pid": 0,
+            "route_name": "1sdwe81",
+            "serials": 11,
+            "status": 0,
+            "icon": "fas fa-upload",
+            "menus": []
+        },
+        {
+            "id": 2,
+            "node_name": "Menu Management",
+            "pid": 0,
+            "route_name": "tree-entity",
+            "serials": 12,
+            "status": 1,
+            "icon": "fa-solid fa-bars",
+            "menus": []
+        },
+        {
+            "id": 1,
+            "node_name": "Settings",
+            "pid": 0,
+            "route_name": "#",
+            "serials": 13,
+            "status": 1,
+            "icon": "fa-solid fa-gears",
+            "menus": [
+                {
+                    "id": 4,
+                    "node_name": "Menu Management1",
+                    "pid": 1,
+                    "route_name": "\/admin-panel\/home\/menu-managements",
+                    "serials": 14,
+                    "status": 1,
+                    "icon": "fa-solid fa-bars",
+                    "menus": []
+                },
+                {
+                    "id": 5,
+                    "node_name": "Test",
+                    "pid": 1,
+                    "route_name": "\/test",
+                    "serials": 15,
+                    "status": 1,
+                    "icon": "fa fa-angle",
+                    "menus": []
+                }
+            ]
+        }
+    ]
+}

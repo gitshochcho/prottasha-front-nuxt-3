@@ -1,0 +1,102 @@
+{
+    "status": true,
+    "message": "Success.",
+    "data": [
+        {
+            "id": 21,
+            "pid": 0,
+            "name": "Menu Setup",
+            "route": "\/admin-panel\/menu-setup",
+            "icon": "far fa-list-alt",
+            "view": 21,
+            "add": 0,
+            "edit": 0,
+            "delete": 0,
+            "showChild": 0,
+            "is_open": 0,
+            "child": []
+        },
+        {
+            "id": 1,
+            "pid": 0,
+            "name": "Settings",
+            "route": "#",
+            "icon": "fa-solid fa-gears",
+            "view": 1,
+            "add": 0,
+            "edit": 0,
+            "delete": 0,
+            "showChild": 0,
+            "is_open": 0,
+            "child": [
+                {
+                    "id": 23,
+                    "pid": 1,
+                    "name": "About Company",
+                    "route": "\/admin-panel\/home\/about-company",
+                    "icon": "far fa-address-card",
+                    "view": 23,
+                    "add": 23,
+                    "edit": 23,
+                    "delete": 23,
+                    "is_open": 0,
+                    "child": []
+                },
+                {
+                    "id": 20,
+                    "pid": 1,
+                    "name": "Role",
+                    "route": "#",
+                    "icon": "fas fa-user-tag",
+                    "view": 20,
+                    "add": 20,
+                    "edit": 20,
+                    "delete": 20,
+                    "is_open": 0,
+                    "child": [
+                        {
+                            "id": 24,
+                            "pid": 20,
+                            "name": "Banner 2",
+                            "route": "\/admin-panel\/home\/banners",
+                            "icon": "far fa-bookmark",
+                            "view": 24,
+                            "add": 24,
+                            "edit": 24,
+                            "delete": 24,
+                            "is_open": 0,
+                            "child": []
+                        },
+                        {
+                            "id": 22,
+                            "pid": 20,
+                            "name": "Banner",
+                            "route": "\/admin-panel\/home\/banner",
+                            "icon": "far fa-arrow-alt-circle-down",
+                            "view": 22,
+                            "add": 22,
+                            "edit": 22,
+                            "delete": 22,
+                            "is_open": 0,
+                            "child": []
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 25,
+            "pid": 0,
+            "name": "User",
+            "route": "\/admin-panel\/role",
+            "icon": "far fa-calendar-plus",
+            "view": 25,
+            "add": 0,
+            "edit": 0,
+            "delete": 0,
+            "showChild": 0,
+            "is_open": 0,
+            "child": []
+        }
+    ]
+}

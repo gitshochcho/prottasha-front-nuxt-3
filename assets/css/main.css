@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Circular-Std-Light';
+  src: url('/fonts/CircularStd/CircularStd-Light.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular-Std-Regular';
+  src: url('/fonts/CircularStd/CircularStd-Black.otf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular-Std-Medium';
+  src: url('/fonts/CircularStd/CircularStd-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Circular-Std-Bold';
+  src: url('/fonts/CircularStd/CircularStd-Bold.otf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Circular-Std-Light', sans-serif;
+}
+.custom-container {
+  @apply py-20 my-0 mx-44 sm:mx-7 md:mx-24 lg:mx-44;
+}
+
+body {
+  @apply bg-gray-100 dark:bg-gray-900;
+}
+
+.p-menubar {
+  @apply border-t-0 border-l-0  bg-gray-100 !important;
+}
+
+/* scrollbar design */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ebebeb;
+}
+
+/* Start Horizontal Schroll */
+
+::-webkit-scrollbar-track:horizontal {
+  background: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #ebebeb;
+}
+
+::-webkit-scrollbar-thumb:horizontal:hover {
+  background: #ebebeb;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+.p-dialog-footer {
+  @apply border-t border-gray-200 pt-4 !important;
+}
+.p-accordionheader,
+.p-accordioncontent,
+.p-accordioncontent-content {
+  @apply p-2 !important;
+}
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active
+  > .p-accordionheader {
+  @apply bg-sky-500 dark:bg-sky-900 text-white !important;
+}
+.p-accordionpanel,
+.p-accordioncontent-content {
+  @apply bg-gray-100 dark:bg-gray-900 !important;
+}
+/* .p-accordionheader-toggle-icon{
+  @apply text-white !important;
+} */
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active
+  > .p-accordionheader
+  .p-accordionheader-toggle-icon {
+  @apply text-white !important;
+}
+
+.p-accordionpanel:not(.p-disabled).p-accordionpanel-active
+  > .p-accordionheader
+  span > i {
+    @apply bg-white dark:bg-red-900 hover:dark:bg-red-400 text-red-500 dark:text-red-200 hover:text-red-800 p-2 text-sm h-[26px] w-[26px] flex items-center justify-center rounded-full !important;
+}
+.p-accordionpanel
+  > .p-accordionheader
+  span > i {
+    @apply bg-red-200 dark:bg-red-900 hover:dark:bg-red-400 text-red-500 dark:text-red-200 hover:text-red-800 p-2 text-sm h-[26px] w-[26px] flex items-center justify-center rounded-full !important;
+}
+
+/* .p-dialog-content {
+  padding: 0  !important;
+  overflow: hidden !important;
+}
+
+.p-dialog-header {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+} */
