@@ -1,25 +1,25 @@
 <template>
 	<div class="bg-teal-700 py-16 px-4 relative overflow-hidden font-bangla">
 		<!-- Decorative background elements -->
-		<div class="hidden lg:block absolute top-4 right-4 ">
+		<div class="hidden lg:block absolute top-4 right-4 opacity-40">
 			<img class="w-96" src="/svg/about/design2.svg" alt="">
 		</div>
 
-		<div class="hidden md:block absolute -bottom-36 -left-36 ">
+		<div class="hidden md:block absolute -bottom-36 -left-48 opacity-40 ">
 			<img class="w-96" src="/svg/about/design2.svg" alt="">
 		</div>
 
-		<div class="container  px-4 sm:px-6 md:px-8 lg:px-12 my-12  mx-auto">
+		<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12  relative z-10">
 			<!-- Header -->
 			<div class="text-start mb-12">
 				<h2 class="text-4xl font-bold text-yellow-400 mb-4">ব্যয়ের খাতসমূহ</h2>
-				<p class="text-white text-lg  leading-relaxed opacity-90">আমাদের সংস্থার সকল ব্যয়ের বিভিন্ন খাত এবং সেগুলোর বিস্তারিত বিবরণ</p>
+				<p class="text-white text-start text-lg max-w-2xl  leading-relaxed opacity-90">আমাদের সংস্থার সকল ব্যয়ের বিভিন্ন খাত এবং সেগুলোর বিস্তারিত বিবরণ</p>
 			</div>
 
 		
 		</div>
 
-        <div class="max-w-7xl mx-auto relative z-10">
+        <div class="max-w-4xl mx-auto relative z-10">
             	<!-- Expense Categories Grid -->
 			<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
 				<!-- Left Column -->

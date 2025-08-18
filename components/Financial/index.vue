@@ -3,11 +3,14 @@
         <FinancialHeaderSection/>
         <FinancialSliderSection/>
         <FinancialExpenseSection/>
+        <FinancialNirikkhaSection/>
         
     </div>
 </template>
 
 <script setup>
+
+
 
 
 
