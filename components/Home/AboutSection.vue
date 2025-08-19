@@ -11,7 +11,7 @@
 							<span class="bg-[#F8EFD3] text-[#1F5747] px-3 py-1 rounded-full text-sm font-medium">আমাদের সম্পর্কে</span>
 						</div>
 
-						<h1 class="text-3xl font-bold mb-4">
+						<h1 class="text-2xl font-bold mb-4">
 							<span class="text-[#020039]">আমরা কে</span>
 						</h1>
 
@@ -25,9 +25,11 @@
 							প্রতিষ্ঠানটির মূল লক্ষ্য হলো - প্রতিবন্ধী শিশু, কিশোর-কিশোরী, যুবক-যুবতী এবং বৃদ্ধদের জন্য একটি সম্মানজনক ও স্বনির্ভর অবস্থান নিশ্চিত কর
 						</p>
 
-						<div>
-							<button class="bg-[#094C3B] hover:bg-teal-700 text-white px-6 py-3 rounded transition-colors">আরও জানুন...</button>
-						</div>
+                        <div class="mt-2">
+                            <NuxtLink to="/about" class="bg-[#094C3B] hover:bg-teal-700 mt-4 text-white px-6 py-2 rounded-md transition-colors inline-block">
+                                আরও জানুন...
+                            </NuxtLink>
+                        </div>
 					</div>
 
 					<!-- Video/Image Section with External Badge -->
@@ -59,7 +61,7 @@
 		</div>
 	</div>
 
-    <div class="h-[1px] w-full bg-[#E0E0E0]"></div>
+	<div class="h-[1px] w-full bg-[#E0E0E0]"></div>
 </template>
 
 <script setup>

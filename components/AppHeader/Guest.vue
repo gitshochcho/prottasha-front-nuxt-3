@@ -73,7 +73,7 @@
 					id: 6,
 					node_name: "আমাদের সাথে সম্পৃক্ত হোন",
 					pid: 0,
-					route_name: "/admin-panel/menu-setup",
+					route_name: "/involve",
 					route_location: "#",
 					serials: 17,
 					status: 1,

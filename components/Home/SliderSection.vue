@@ -61,22 +61,26 @@
 					</p>
 
 					<!-- CTA Buttons -->
-					<div
-						class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-						v-animateonscroll="{
-							enterClass: 'animate-fadeinup',
-							leaveClass: 'animate-fadeoutdown',
-						}"
-						:style="{ animationDelay: '0.8s' }">
-						<button
-							class="bg-yellow-400 hover:bg-yellow-500 text-black text-sm  px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl active:scale-95 group">
-							<span class="group-hover:translate-x-1 transition-transform duration-300 inline-block"> আমাদের সাথে যুক্ত হোন </span>
-						</button>
-						<button
-							class="border-2 border-white text-white hover:bg-white text-sm hover:text-black  px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 group">
-							<span class="group-hover:translate-x-1 transition-transform duration-300 inline-block"> আরো জানতে → </span>
-						</button>
-					</div>
+                    <div
+                        class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+                        v-animateonscroll="{
+                            enterClass: 'animate-fadeinup',
+                            leaveClass: 'animate-fadeoutdown',
+                        }"
+                        :style="{ animationDelay: '0.8s' }">
+                        <NuxtLink
+                            to="/volunteer-join-form"
+                            class="bg-yellow-400 hover:bg-yellow-500 text-black text-sm px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl active:scale-95 group"
+                        >
+                            <span class="group-hover:translate-x-1 transition-transform duration-300 inline-block"> আমাদের সাথে যুক্ত হোন </span>
+                        </NuxtLink>
+                        <NuxtLink
+                            to="/about"
+                            class="border-2 border-white text-white hover:bg-white text-sm hover:text-black px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 group"
+                        >
+                            <span class="group-hover:translate-x-1 transition-transform duration-300 inline-block"> আরো জানতে → </span>
+                        </NuxtLink>
+                    </div>
 
 					<!-- Statistics -->
 					<div

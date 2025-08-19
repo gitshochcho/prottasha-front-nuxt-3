@@ -9,30 +9,30 @@
 			<!-- Header Section -->
 			<div class="text-center mb-12">
 				<div class="mb-4">
-					<span class="bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-medium">Get Involved</span>
+					<span class="bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-medium">যুক্ত হোন</span>
 				</div>
 
 				<h1 class="text-4xl font-bold mb-6 text-white">
-					Ready to Make a Difference?<br />
-					<span class="text-yellow-400">Work With Us</span>
+					আপনি কি সমাজে পরিবর্তন আনতে চান?<br />
+					<span class="text-yellow-400">আমাদের সাথে কাজ করুন</span>
 				</h1>
 
 				<p class="text-white/90 max-w-2xl mx-auto leading-relaxed">
-					If you dream of building a humane society, working with us could be your next meaningful step.
+					আপনি যদি মানবিক সমাজ গঠনের স্বপ্ন দেখেন—তাহলে আমাদের সঙ্গে কাজ করাই হতে পারে আপনার পরবর্তী অর্থবহ পদক্ষেপ।
 				</p>
 			</div>
 
 			<!-- Involvement Cards -->
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 				<!-- Become a Volunteer -->
-				<div class="bg-teal-700/50 backdrop-blur-sm p-8 rounded-lg border border-teal-600/30">
+				<div class="bg-[#225D4E] backdrop-blur-sm p-8 rounded-lg border border-teal-600/30">
 					<div class="text-center mb-6">
 						<div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
 							<i class="pi pi-users text-black text-xl"></i>
 						</div>
 
-						<h3 class="text-xl font-bold text-white mb-3">Become a Volunteer</h3>
-						<p class="text-white/80 text-sm mb-6">Help us with your time and skills</p>
+						<h3 class="text-xl font-bold text-white mb-3"> স্বেচ্ছাসেবক হোন</h3>
+						<p class="text-white/80 text-sm mb-6">আপনার সময় ও যোগ্যতা দিয়ে পাশে থাকুন</p>
 					</div>
 
 					<!-- Benefits List -->
@@ -41,40 +41,39 @@
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Flexible Schedule</span>
+							<span class="text-white text-sm">ফ্লেক্সিবল সময়সূচী</span>
 						</div>
 
 						<div class="flex items-center gap-3">
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Skill Development</span>
+							<span class="text-white text-sm">দক্ষতা উন্নয়ন</span>
 						</div>
 
 						<div class="flex items-center gap-3">
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Social Contribution</span>
+							<span class="text-white text-sm">সামাজিক অবদান</span>
 						</div>
 					</div>
 
 					<button
 						class="w-full bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
-						Join Now
-						<i class="pi pi-arrow-right text-sm"></i>
+						যুক্ত হোন →
 					</button>
 				</div>
 
 				<!-- Join Professional Positions -->
-				<div class="bg-teal-700/50 backdrop-blur-sm p-8 rounded-lg border border-teal-600/30">
+				<div class="bg-[#225D4E] backdrop-blur-sm p-8 rounded-lg border border-teal-600/30">
 					<div class="text-center mb-6">
 						<div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
 							<i class="pi pi-briefcase text-black text-xl"></i>
 						</div>
 
-						<h3 class="text-xl font-bold text-white mb-3">Join Professional Positions</h3>
-						<p class="text-white/80 text-sm mb-6">Build your career with us and make a difference</p>
+						<h3 class="text-xl font-bold text-white mb-3">পেশাগত পদে আবেদন করুন</h3>
+						<p class="text-white/80 text-sm mb-6">ক্যারিয়ার গড়ুন, পরিবর্তন আনুন</p>
 					</div>
 
 					<!-- Benefits List -->
@@ -83,40 +82,39 @@
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Competitive Salary</span>
+							<span class="text-white text-sm">প্রতিযোগিতামূলক বেতন</span>
 						</div>
 
 						<div class="flex items-center gap-3">
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Professional Development</span>
+							<span class="text-white text-sm">পেশাগত উন্নয়ন</span>
 						</div>
 
 						<div class="flex items-center gap-3">
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Job Satisfaction</span>
+							<span class="text-white text-sm">কর্মতৃপ্তি</span>
 						</div>
 					</div>
 
 					<button
 						class="w-full bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
-						Apply Now
-						<i class="pi pi-arrow-right text-sm"></i>
+						আবেদন করুন  →
 					</button>
 				</div>
 
 				<!-- Donate -->
-				<div class="bg-teal-700/50 backdrop-blur-sm p-8 rounded-lg border border-teal-600/30">
+				<div class="bg-[#225D4E] backdrop-blur-sm p-8 rounded-lg border border-teal-600/30">
 					<div class="text-center mb-6">
 						<div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4">
 							<i class="pi pi-heart text-black text-xl"></i>
 						</div>
 
-						<h3 class="text-xl font-bold text-white mb-3">Donate</h3>
-						<p class="text-white/80 text-sm mb-6">Help our work with financial support</p>
+						<h3 class="text-xl font-bold text-white mb-3">দান করুন</h3>
+						<p class="text-white/80 text-sm mb-6"> আর্থিক সহায়তা দিন, আমাদের পাশে থাকুন</p>
 					</div>
 
 					<!-- Benefits List -->
@@ -125,28 +123,27 @@
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Transparent Usage</span>
+							<span class="text-white text-sm">স্বচ্ছ ব্যয়</span>
 						</div>
 
 						<div class="flex items-center gap-3">
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Regular Reports</span>
+							<span class="text-white text-sm">নিয়মিত প্রতিবেদন</span>
 						</div>
 
 						<div class="flex items-center gap-3">
 							<div class="w-5 h-5 bg-yellow-500 rounded-full flex items-center justify-center flex-shrink-0">
 								<i class="pi pi-check text-black text-xs"></i>
 							</div>
-							<span class="text-white text-sm">Direct Impact</span>
+							<span class="text-white text-sm">সরাসরি প্রভাব</span>
 						</div>
 					</div>
 
 					<button
 						class="w-full bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
-						Donate Now
-						<i class="pi pi-arrow-right text-sm"></i>
+						দান করুন →
 					</button>
 				</div>
 			</div>

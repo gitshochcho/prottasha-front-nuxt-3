@@ -1,8 +1,9 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
 	<div>
-		<ContactFormSection />
+		<Involve />
 	</div>
 </template>
 

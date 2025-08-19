@@ -53,7 +53,7 @@
 					</p>
 				</div>
 				<div class="w-1/3">
-					<div class="rounded-full overflow-hidden border-4 border-yellow-400 max-w-[250px] mx-auto">
+					<div class="rounded-full overflow-hidden border-4 border-yellow-400  mx-auto">
 						<img src="/images/about/11.png" alt="আমাদের ভিশন" class=" h-auto" />
 					</div>
 				</div>
