@@ -15,7 +15,7 @@
 						<FooterLogo :width="'70%'" :height="'40px'" />
 					</NuxtLink>
 					<p class="text-sm text-gray-300 mb-6 leading-relaxed">
-						A humanitarian organization working to bring positive changes in the lives of people with disabilities.
+						একটি মানবসেবা প্রতিষ্ঠান যা প্রতিবন্ধী মানুষের জীবনে ইতিবাচক পরিবর্তন আনতে কাজ করে।
 					</p>
 
 					<!-- Contact Info -->
@@ -31,7 +31,7 @@
 									clip-rule="evenodd" />
 							</svg>
 							<span class="text-gray-300 group-hover:text-white transition-colors duration-300"
-								>154/6/4, Jhilkanan R/A, West Rampura, Dhaka-1219, Bangladesh</span
+								>ঠিকানা: ১৫৪/৬/৪, ঝিলকানন আর/এ, পশ্চিম রামপুরা, ঢাকা-১২১৯, বাংলাদেশ</span
 							>
 						</div>
 						<div class="flex items-center hover:text-yellow-400 transition-colors duration-300 cursor-pointer group">
@@ -42,7 +42,7 @@
 								<path
 									d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
 							</svg>
-							<span class="text-gray-300 group-hover:text-white transition-colors duration-300">+88 1071 66 15 831</span>
+							<span class="text-gray-300 group-hover:text-white transition-colors duration-300">+৮৮ ১০৭১ ৬৬ ১৫ ৮৩১</span>
 						</div>
 						<div class="flex items-center hover:text-yellow-400 transition-colors duration-300 cursor-pointer group">
 							<svg
@@ -66,24 +66,24 @@
 					class="order-2 sm:order-2 lg:order-2"
 					:style="{ animationDelay: '0.1s' }">
 					<h3 class="text-lg font-semibold text-yellow-400 mb-4 relative">
-						Quick Links
+						দ্রুত লিংক
 						<span class="absolute -bottom-1 left-0 w-8 h-0.5 bg-yellow-400 rounded"></span>
 					</h3>
 					<nav class="flex flex-col space-y-3">
 						<NuxtLink to="/about" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							About Us
+							আমরা কে
 						</NuxtLink>
 						<NuxtLink to="/facilities" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Facilities
+							অবকাঠামো
 						</NuxtLink>
 						<NuxtLink to="/impact" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Our Impact
+							আমাদের প্রভাব
 						</NuxtLink>
 						<NuxtLink to="/get-involved" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Get Involved
+							যুক্ত হোন
 						</NuxtLink>
 						<NuxtLink to="/services" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Services
+							আমাদের সেবা
 						</NuxtLink>
 					</nav>
 				</div>
@@ -97,18 +97,18 @@
 					class="order-3 sm:order-3 lg:order-3"
 					:style="{ animationDelay: '0.2s' }">
 					<h3 class="text-lg font-semibold text-yellow-400 mb-4 relative">
-						Get Involved
+						যুক্ত হোন
 						<span class="absolute -bottom-1 left-0 w-8 h-0.5 bg-yellow-400 rounded"></span>
 					</h3>
 					<nav class="flex flex-col space-y-3">
 						<NuxtLink to="/sponsor" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Sponsor a Child
+							একটি শিশুকে স্পন্সর করুন
 						</NuxtLink>
 						<NuxtLink to="/donate" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Make a Donation
+							দান করুন
 						</NuxtLink>
 						<NuxtLink to="/volunteer" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Become a Volunteer
+							স্বেচ্ছাসেবক হন
 						</NuxtLink>
 					</nav>
 				</div>
@@ -122,28 +122,28 @@
 					class="order-4 sm:order-4 lg:order-4"
 					:style="{ animationDelay: '0.3s' }">
 					<h3 class="text-lg font-semibold text-yellow-400 mb-4 relative">
-						Our Services
+						আমাদের সেবা সমূহ
 						<span class="absolute -bottom-1 left-0 w-8 h-0.5 bg-yellow-400 rounded"></span>
 					</h3>
 					<nav class="flex flex-col space-y-3">
 						<NuxtLink
 							to="/medical-support"
 							class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2 leading-relaxed">
-							Medical Support & Rehabilitation
+							মেডিকেল সাপোর্ট ও পুনর্বাসন
 						</NuxtLink>
 						<NuxtLink to="/legal-aid" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Legal Aid & Employment
+							আইনি সহায়তা ও কর্মসংস্থান
 						</NuxtLink>
 						<NuxtLink to="/mental-health" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Mental Health & Counseling
+							মানসিক স্বাস্থ্য ও পরামর্শ
 						</NuxtLink>
 						<NuxtLink
 							to="/social-awareness"
 							class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							Social Awareness & Rights
+							সামাজিক সচেতনতা ও অধিকার
 						</NuxtLink>
 						<NuxtLink to="/new-life" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
-							New Life Preparation
+							নতুন জীবনের প্রস্তুতি
 						</NuxtLink>
 					</nav>
 				</div>
@@ -157,7 +157,7 @@
 					class="order-5 sm:order-5 lg:order-5 sm:col-span-2 lg:col-span-1"
 					:style="{ animationDelay: '0.4s' }">
 					<h3 class="text-lg font-semibold text-yellow-400 mb-4 relative">
-						Follow Us
+						সোস্যাল মিডিয়া
 						<span class="absolute -bottom-1 left-0 w-8 h-0.5 bg-yellow-400 rounded"></span>
 					</h3>
 					<div class="flex space-x-3 mb-6">
@@ -196,7 +196,7 @@
 					</div>
 
 					<h4 class="text-lg font-semibold text-yellow-400 mb-3 relative">
-						Subscribe
+						ইমেইল সাবস্ক্রিবশন
 						<span class="absolute -bottom-1 left-0 w-8 h-0.5 bg-yellow-400 rounded"></span>
 					</h4>
 					<div class="flex rounded-lg overflow-hidden shadow-lg">
@@ -225,11 +225,11 @@
 				class="border-t border-teal-700 pt-6 md:pt-8"
 				:style="{ animationDelay: '0.5s' }">
 				<div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-					<p class="text-sm text-gray-300 text-center md:text-left">©Copyright 2025 Prottasha</p>
+					<p class="text-sm text-gray-300 text-center md:text-left"> স্বত্ব © প্রত্যাশা ২০২৫</p>
 					<div class="flex flex-wrap justify-center space-x-4 md:space-x-6">
-						<NuxtLink to="/terms" class="text-sm text-gray-300 hover:text-yellow-400 transition-all duration-300 hover:scale-105"> Terms </NuxtLink>
-						<NuxtLink to="/privacy" class="text-sm text-gray-300 hover:text-yellow-400 transition-all duration-300 hover:scale-105"> Privacy </NuxtLink>
-						<NuxtLink to="/cookies" class="text-sm text-gray-300 hover:text-yellow-400 transition-all duration-300 hover:scale-105"> Cookies </NuxtLink>
+						<NuxtLink to="/terms" class="text-sm text-gray-300 hover:text-yellow-400 transition-all duration-300 hover:scale-105"> শর্তাবলী </NuxtLink>
+						<NuxtLink to="/privacy" class="text-sm text-gray-300 hover:text-yellow-400 transition-all duration-300 hover:scale-105"> গোপনীয়তা </NuxtLink>
+						<NuxtLink to="/cookies" class="text-sm text-gray-300 hover:text-yellow-400 transition-all duration-300 hover:scale-105"> কুকিজ </NuxtLink>
 					</div>
 					<p class="text-sm text-gray-300 text-center md:text-right">
 						Developed By -
