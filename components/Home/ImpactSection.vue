@@ -175,13 +175,13 @@
 								আপনার দান আমাদের সম্প্রদায়ে প্রতিবন্ধী ব্যক্তিদের জন্য অত্যন্ত প্রয়োজনীয় সেবা, সমর্থন এবং এডভোকেসি প্রদানে সাহায্য করে।
 							</p>
 
-							<button
+							<NuxtLink to="donation-form"
 								class="bg-teal-800 hover:bg-teal-900 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 font-bangla hover:scale-105 hover:shadow-lg"
 								data-aos="zoom-in"
 								data-aos-duration="600"
 								data-aos-delay="1000">
 								এখন দান করুন
-							</button>
+							</NuxtLink>
 						</div>
 					</div>
 				</div>
@@ -217,13 +217,13 @@
 								আমাদের ভোলান্টিয়ার সম্প্রদায়ে যোগ দিন এবং প্রতিবন্ধী ব্যক্তিদের জীবনে সরাসরি প্রভাব ফেলুন।
 							</p>
 
-							<button
+							<NuxtLink to="volunteer-join-form"
 								class="bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-all duration-300 font-bangla hover:scale-105 hover:shadow-lg"
 								data-aos="zoom-in"
 								data-aos-duration="600"
 								data-aos-delay="1100">
 								অংশগ্রহণ করুন
-							</button>
+							</NuxtLink>
 						</div>
 					</div>
 				</div>

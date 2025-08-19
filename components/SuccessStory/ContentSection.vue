@@ -28,9 +28,9 @@
 	const yourVideoData = ref([
 		{
 			id: 1,
-			hl: "Accessimate | Web Content Accessibility Guidelines Overview",
+			hl: "Prottaysha | Donation Management System",
 			img: "/images/stories/videostory.png",
-			url: "https://www.youtube.com/embed/YRto1QedAE4?si=OMXxdksEO5h_WOfL",
+			url: "https://www.youtube.com/embed/9pqdJ5Qmfn4?si=YoeaubtKd3OcDwET",
 		},
 	])
 </script>

@@ -1,14 +1,14 @@
 <script setup>
 	const formData = ref({
 		name: "",
-		phone: "",
+		designation: "",
 		email: "",
-		address: "",
+		phone: "",
 		message: "",
 	})
 	const emit = defineEmits(["add_emit"])
 	const validations_errors = ref({})
-	const skip_validations = ref(["id"])
+	const skip_validations = ref(["id", "designation", "phone"])
 	const isLoading = ref(false)
 	const response_modal = ref({})
 	const createHandler = async () => {
@@ -24,42 +24,39 @@
 
 		try {
 			isLoading.value = true
-			const getData = await $fetchCMS(`cms/contacts`, {
-				method: "POST",
-				body: formData.value,
-			})
-			response_modal.value = getData
-			if (getData.status == true) {
-				emit("add_emit", getData.data)
-				resetForm()
+			
+			// Prepare data for API submission
+			const submitData = {
+				name: formData.value.name,
+				designation: formData.value.designation || null,
+				email: formData.value.email,
+				phone: formData.value.phone || null,
+				message: formData.value.message
 			}
-			if (getData.status == true) {
-				response_modal.value = getData
+			
+			const getData = await $fetch('https://api.prottaysha.org/api/contact/submit', {
+				method: "POST",
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: submitData,
+			})
+			
+			response_modal.value = {
+				status: true,
+				message: "Message sent successfully!"
+			}
+			
+			if (getData) {
+				resetForm()
 			}
 		} catch (e) {
 			console.log("Get Message", e.message)
-			// console.log('Get response',e.response);
-			if (e.response?.status === 404 || e.response?.status === 422) {
-				console.log("here 1", e.response)
-				if (e.response?.status === 404 || e.response?.status === 409 || e.response?.status === 422) {
-					console.log("here 2", e.response._data.data)
-					for (const key in e.response._data.data) {
-						if (e.response._data.data.hasOwnProperty(key)) {
-							const value = e.response._data.data[key][0]
-							validations_errors.value[key] = value
-						}
-					}
-				}
-			} else if (!e.response?.status) {
-				response_modal.value = {
-					status: false,
-					message: "Something went wrong. Please try again later.",
-				}
-			} else {
-				response_modal.value = {
-					status: e.response._data.status,
-					message: e.response._data.message,
-				}
+			console.log("Error response:", e)
+			
+			response_modal.value = {
+				status: false,
+				message: e.message || "Something went wrong. Please try again later.",
 			}
 		} finally {
 			isLoading.value = false
@@ -68,9 +65,9 @@
 	const resetForm = () => {
 		formData.value = {
 			name: "",
+			designation: "",
 			phone: "",
 			email: "",
-			address: "",
 			message: "",
 		}
 		validations_errors.value = {}

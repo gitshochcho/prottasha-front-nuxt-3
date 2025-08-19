@@ -4,8 +4,12 @@ const formData = ref({
     email: '',
     phone: '',
     age: '',
-    message: '',
-    area: '',
+    area_of_interest: '',
+    available_time: '',
+    district_id: '',
+    password: '',
+    why_interest: '',
+    type: 'volunteer'
 });
 const emit = defineEmits(['add_emit']);
 const validations_errors = ref({});
@@ -27,43 +31,56 @@ const createHandler = async () => {
 
     try {
         isLoading.value = true;
-        const getData = await $fetchCMS(`cms/contacts`, {
+        
+        // Prepare data for API submission
+        const submitData = {
+            name: formData.value.name,
+            phone: formData.value.phone,
+            email: formData.value.email,
+            age: parseInt(formData.value.age),
+            area_of_interest: formData.value.area_of_interest,
+            available_time: formData.value.available_time,
+            district_id: parseInt(formData.value.district_id),
+            password: formData.value.password,
+            why_interest: formData.value.why_interest,
+            type: formData.value.type
+        };
+        
+        const getData = await $fetch('https://api.prottaysha.org/api/volunteer/register', {
             method: 'POST',
-            body: formData.value,
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: submitData,
         });
-        response_modal.value = getData;
-        if (getData.status == true) {
-            emit('add_emit', getData.data);
+        
+        response_modal.value = {
+            status: true,
+            message: 'স্বেচ্ছাসেবক হিসেবে সফলভাবে নিবন্ধিত হয়েছেন!'
+        };
+        
+        if (getData) {
             resetForm();
-        }
-        if (getData.status == true) {
-            response_modal.value = getData;
         }
     } catch (e) {
         console.log('Get Message', e.message);
-        // console.log('Get response',e.response);
-        if (e.response?.status === 404 || e.response?.status === 422) {
-            console.log('here 1', e.response);
-            if (e.response?.status === 404 || e.response?.status === 409 || e.response?.status === 422) {
-                console.log('here 2', e.response._data.data);
-                for (const key in e.response._data.data) {
-                    if (e.response._data.data.hasOwnProperty(key)) {
-                        const value = e.response._data.data[key][0];
+        console.log('Error response:', e);
+        
+        if (e.response?.status === 422) {
+            // Handle validation errors
+            if (e.response._data?.errors) {
+                for (const key in e.response._data.errors) {
+                    if (e.response._data.errors.hasOwnProperty(key)) {
+                        const value = e.response._data.errors[key][0];
                         validations_errors.value[key] = value;
                     }
                 }
             }
-        } else if (!e.response?.status) {
-            response_modal.value = {
-                status: false,
-                message: 'Something went wrong. Please try again later.',
-            }
         } else {
             response_modal.value = {
-                status: e.response._data.status,
-                message: e.response._data.message,
-            }
-
+                status: false,
+                message: e.message || 'কিছু সমস্যা হয়েছে। আবার চেষ্টা করুন।',
+            };
         }
     } finally {
         isLoading.value = false;
@@ -75,8 +92,12 @@ const resetForm = () => {
         email: '',
         phone: '',
         age: '',
-        message: '',
-        area: '',
+        area_of_interest: '',
+        available_time: '',
+        district_id: '',
+        password: '',
+        why_interest: '',
+        type: 'volunteer'
     };
     validations_errors.value = {};
 }
@@ -98,10 +119,10 @@ const resetForm = () => {
                 <div class="p-8 md:p-12">
                     <form @submit.prevent="createHandler" class="space-y-6">
                         
-                        <!-- Name and Area -->
+                        <!-- Name and Email -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-gray-700 text-sm font-medium mb-3">নাম</label>
+                                <label class="block text-gray-700 text-sm font-medium mb-3">নাম *</label>
                                 <input 
                                     type="text"
                                     v-model="formData.name"
@@ -114,31 +135,7 @@ const resetForm = () => {
                             </div>
                             
                             <div>
-                                <label class="block text-gray-700 text-sm font-medium mb-3">আপনার এলাকা</label>
-                                <select 
-                                    v-model="formData.area"
-                                    :class="validations_errors.area ? 'border-red-500' : 'border-gray-300'"
-                                    class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
-                                    @focus="validations_errors.area = ''"
-                                >
-                                    <option value="">এলাকা নির্বাচন করুন</option>
-                                    <option value="dhaka">ঢাকা</option>
-                                    <option value="chittagong">চট্টগ্রাম</option>
-                                    <option value="sylhet">সিলেট</option>
-                                    <option value="rajshahi">রাজশাহী</option>
-                                    <option value="khulna">খুলনা</option>
-                                    <option value="barishal">বরিশাল</option>
-                                    <option value="rangpur">রংপুর</option>
-                                    <option value="mymensingh">ময়মনসিংহ</option>
-                                </select>
-                                <LazyInputError class="text-sm mt-1" :message="validations_errors.area" />
-                            </div>
-                        </div>
-
-                        <!-- Email and Phone -->
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label class="block text-gray-700 text-sm font-medium mb-3">ইমেইল</label>
+                                <label class="block text-gray-700 text-sm font-medium mb-3">ইমেইল *</label>
                                 <input 
                                     type="email"
                                     v-model="formData.email"
@@ -149,22 +146,12 @@ const resetForm = () => {
                                 />
                                 <LazyInputError class="text-sm mt-1" :message="validations_errors.email" />
                             </div>
-                            
-                            <div>
-                                <label class="block text-gray-700 text-sm font-medium mb-3">সামাজিক নেটওয়ার্ক</label>
-                                <input 
-                                    type="text"
-                                    v-model="formData.social_network"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
-                                    placeholder="ফেসবুক/টুইটার লিংক"
-                                />
-                            </div>
                         </div>
 
                         <!-- Phone and Age -->
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-gray-700 text-sm font-medium mb-3">ফোন</label>
+                                <label class="block text-gray-700 text-sm font-medium mb-3">ফোন *</label>
                                 <input 
                                     type="tel"
                                     v-model="formData.phone"
@@ -177,33 +164,103 @@ const resetForm = () => {
                             </div>
                             
                             <div>
-                                <label class="block text-gray-700 text-sm font-medium mb-3">বয়স</label>
+                                <label class="block text-gray-700 text-sm font-medium mb-3">বয়স *</label>
                                 <input 
                                     type="number"
                                     v-model="formData.age"
                                     :class="validations_errors.age ? 'border-red-500' : 'border-gray-300'"
                                     class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
                                     placeholder="আপনার বয়স"
-                                    min="16"
-                                    max="70"
+                                    min="18"
+                                    max="80"
                                     @focus="validations_errors.age = ''"
                                 />
                                 <LazyInputError class="text-sm mt-1" :message="validations_errors.age" />
                             </div>
                         </div>
 
-                        <!-- Message -->
+                        <!-- District and Available Time -->
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 text-sm font-medium mb-3">জেলা *</label>
+                                <select 
+                                    v-model="formData.district_id"
+                                    :class="validations_errors.district_id ? 'border-red-500' : 'border-gray-300'"
+                                    class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                                    @focus="validations_errors.district_id = ''"
+                                >
+                                    <option value="">জেলা নির্বাচন করুন</option>
+                                    <option value="1">ঢাকা</option>
+                                    <option value="2">চট্টগ্রাম</option>
+                                    <option value="3">সিলেট</option>
+                                    <option value="4">রাজশাহী</option>
+                                    <option value="5">খুলনা</option>
+                                    <option value="6">বরিশাল</option>
+                                    <option value="7">রংপুর</option>
+                                    <option value="8">ময়মনসিংহ</option>
+                                </select>
+                                <LazyInputError class="text-sm mt-1" :message="validations_errors.district_id" />
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 text-sm font-medium mb-3">উপলব্ধ সময় *</label>
+                                <select 
+                                    v-model="formData.available_time"
+                                    :class="validations_errors.available_time ? 'border-red-500' : 'border-gray-300'"
+                                    class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                                    @focus="validations_errors.available_time = ''"
+                                >
+                                    <option value="">উপলব্ধ সময় নির্বাচন করুন</option>
+                                    <option value="সকাল ৮টা - দুপুর ১২টা">সকাল ৮টা - দুপুর ১২টা</option>
+                                    <option value="দুপুর ১২টা - বিকেল ৫টা">দুপুর ১২টা - বিকেল ৫টা</option>
+                                    <option value="বিকেল ৫টা - রাত ৯টা">বিকেল ৫টা - রাত ৯টা</option>
+                                    <option value="সপ্তাহান্তে">শুধু সপ্তাহান্তে</option>
+                                    <option value="যেকোনো সময়">যেকোনো সময়</option>
+                                </select>
+                                <LazyInputError class="text-sm mt-1" :message="validations_errors.available_time" />
+                            </div>
+                        </div>
+
+                        <!-- Area of Interest -->
                         <div>
-                            <label class="block text-gray-700 text-sm font-medium mb-3">কেন স্বেচ্ছাসেবক হতে চান?</label>
+                            <label class="block text-gray-700 text-sm font-medium mb-3">আগ্রহের ক্ষেত্র *</label>
+                            <input 
+                                type="text"
+                                v-model="formData.area_of_interest"
+                                :class="validations_errors.area_of_interest ? 'border-red-500' : 'border-gray-300'"
+                                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                                placeholder="যেমন: শিক্ষা, স্বাস্থ্য, পরিবেশ, সামাজিক সেবা"
+                                @focus="validations_errors.area_of_interest = ''"
+                            />
+                            <LazyInputError class="text-sm mt-1" :message="validations_errors.area_of_interest" />
+                        </div>
+
+                        <!-- Password -->
+                        <div>
+                            <label class="block text-gray-700 text-sm font-medium mb-3">পাসওয়ার্ড *</label>
+                            <input 
+                                type="password"
+                                v-model="formData.password"
+                                :class="validations_errors.password ? 'border-red-500' : 'border-gray-300'"
+                                class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors"
+                                placeholder="কমপক্ষে ৬ অক্ষরের পাসওয়ার্ড"
+                                @focus="validations_errors.password = ''"
+                            />
+                            <LazyInputError class="text-sm mt-1" :message="validations_errors.password" />
+                        </div>
+
+                        <!-- Why Interest -->
+                        <div>
+                            <label class="block text-gray-700 text-sm font-medium mb-3">কেন স্বেচ্ছাসেবক হতে চান? *</label>
                             <textarea 
                                 rows="5"
-                                v-model="formData.message"
-                                :class="validations_errors.message ? 'border-red-500' : 'border-gray-300'"
+                                v-model="formData.why_interest"
+                                :class="validations_errors.why_interest ? 'border-red-500' : 'border-gray-300'"
                                 class="w-full px-4 py-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-colors resize-none"
                                 placeholder="আপনার অভিজ্ঞতা ও আমাদের সাথে যুক্ত হওয়ার কারণ লিখুন..."
-                                @focus="validations_errors.message = ''"
+                                @focus="validations_errors.why_interest = ''"
                             ></textarea>
-                            <LazyInputError class="text-sm mt-1" :message="validations_errors.message" />
+                            <LazyInputError class="text-sm mt-1" :message="validations_errors.why_interest" />
                         </div>
 
                         <!-- Submit Button -->

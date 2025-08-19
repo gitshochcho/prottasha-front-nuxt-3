@@ -9,6 +9,10 @@
 			type: String,
 			default: "70%",
 		},
+		maxHeight: {
+			type: String,
+			default: "100%",
+		},
 	})
 
 	const isOpen = ref(false)
@@ -33,9 +37,9 @@
 		<Carousel :value="videoSliderList" :numVisible="1" :numScroll="1" :autoplayInterval="10000" :circular="true" :responsiveOptions="settings1" class="w-full">
 			<template #item="slotProps">
 				<div class="w-full video_part">
-					<div class="h-full mx-auto" :style="{ maxWidth: props.maxWidth }">
-						<div class="relative block w-full videoBox rounded-xl" @click="openModal(slotProps.index)">
-							<img :src="slotProps.data.img" class="w-full rounded-xl" />
+					<div class="h-[350px] mx-auto" :style="{ maxWidth: props.maxWidth , maxHeight:props.maxHeight}">
+						<div class="relative block w-full h-[350px] videoBox rounded-xl" @click="openModal(slotProps.index)">
+							<img :src="slotProps.data.img" class="w-full h-[350px] rounded-xl" />
 							<img src="/images/yt-play.png" class="absolute top-[46%] z-40 left-[46%] w-[50px] h-[50px] yt-play" />
 							<button
 								class="absolute top-[46%] z-40 left-[46%] yt-play bg-red-600 hover:bg-red-700 text-white w-16 h-16 rounded-full flex items-center justify-center transition-colors">

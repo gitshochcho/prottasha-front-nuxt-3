@@ -192,7 +192,7 @@
 				<!-- Desktop Menu -->
 				<div class="items-center hidden lg:flex lg:justify-between">
 					<!-- Primary Menu Items -->
-					<div class="flex space-x-2">
+					<div class="flex space-x-1">
 						<div v-for="item in menuItems" :key="item.id" class="relative group">
 							<NuxtLink
 								v-if="!item.children || item.children.length === 0"
@@ -240,15 +240,14 @@
 
 				<!-- CTA Buttons & Hamburger -->
 				<div class="flex items-between space-x-4">
-					<!-- <NuxtLink
-						v-if="admin_user"
-						to="/admin-panel"
-						:class="[
-							'hidden lg:block transition-all duration-300 border border-gray-300 dark:border-gray-600 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700',
-							isScrolled ? 'text-sm px-10 py-1.5' : 'text-base px-10 py-2',
-						]">
-						Admin Panel
-					</NuxtLink> -->
+                    <NuxtLink
+                        :to="`${useRuntimeConfig().public.API_URL_ADMIN || ''}login`"
+                        :class="[
+                            'hidden lg:block transition-all duration-300 border border-gray-300  rounded-full hover:bg-gray-100 ',
+                            isScrolled ? 'text-sm px-4 py-1.5' : 'text-base px-5 py-2',
+                        ]">
+                        লগইন
+                    </NuxtLink>
 
 					<!-- Hamburger Menu -->
 					<button class="p-2 lg:hidden" @click="toggleMenu" aria-label="Toggle Menu">
@@ -328,8 +327,8 @@
 				<div class="h-px my-4 bg-gray-200 dark:bg-gray-700"></div>
 
 				<!-- Mobile CTA buttons -->
-				<NuxtLink to="/demo" class="block py-3 px-4 mb-2 text-center bg-red-500 text-white rounded-lg hover:bg-red-700" @click="toggleMenu">
-					Donate
+				<NuxtLink :to="`${useRuntimeConfig().public.API_URL_ADMIN || ''}login`" class="block py-3 px-4 mb-2 text-center bg-red-500 text-white rounded-lg hover:bg-red-700" @click="toggleMenu">
+					Login
 				</NuxtLink>
 			</div>
 		</div>
