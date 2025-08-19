@@ -84,7 +84,7 @@
 					id: 13,
 					node_name: "যোগাযোগ",
 					pid: 0,
-					route_name: "/admin-panel/social-links",
+					route_name: "/contact",
 					route_location: "/admin-panel/social-links",
 					serials: 34,
 					status: 1,

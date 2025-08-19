@@ -27,7 +27,7 @@
                             <div 
                                 :class="[
                                     'rounded-xl p-8 transition-all duration-300 min-h-[400px] flex flex-col justify-between',
-                                    isMiddleCard(slotProps.index) ? 'bg-teal-700 text-white transform scale-110 shadow-2xl' : 'bg-white text-gray-700 shadow-md'
+                                    isMiddleCard(slotProps.index) ? 'bg-[#00725E] text-white transform scale-110 shadow-2xl' : 'bg-white text-gray-700 shadow-md'
                                 ]"
                             >
                                 <!-- Icon -->

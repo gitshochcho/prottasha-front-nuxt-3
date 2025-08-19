@@ -1,7 +1,7 @@
 <template>
 	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-12">
 		<!-- Mission and Vision section -->
-		<div class="grid grid-cols-1 gap-12 ">
+		<div class="grid grid-cols-1 gap-12">
 			<!-- Vision section with image on right -->
 			<div class="flex flex-col lg:flex-row items-center gap-8">
 				<div class="w-full">
@@ -20,26 +20,25 @@
 				</div>
 			</div>
 		</div>
-
-
-        
 	</div>
 
-    <!-- Banner Section -->
-		<div
-			role="banner"
-			class="w-full flex items-center text-white bg-center bg-auto"
-			style="min-height: 10rem; height: 60vh; background-image: url('/images/banner/rec_banner.png')"
-			aria-label="Accessibility and legal compliance notification">
-			<div class="flex items-center text-center container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 font-bangla">
-				<div class="text-white flex flex-col items-start justify-center text-start">
-					<h1 class="text-3xl text-[#F5C304] md:text-2xl lg:text-3xl font-bold mb-4">ভবিষ্যত পরিকল্পনায় তহবিলের প্রয়োজন</h1>
-					<p class="text-sm md:text-sm  leading-relaxed">
-						আমরা চাই আমাদের সেবার পরিধি আরও বাড়াতে-নতুন প্রশিক্ষণ কেন্দ্র, আধুনিক স্বাস্থ্যসেবা সুবিধা, আরও বেশি সংখ্যক সুবিধাভোগীদের অন্তর্ভুক্তি, এবং দীর্ঘমেয়াদি উন্নয়ন পরিকল্পনার বাস্তবায়ন। এজন্য প্রয়োজন আরও শক্তিশালী অর্থনৈতিক সহায়তা ও দীর্ঘস্থায়ী দাতাসমূহের অংশগ্রহণ।  আপনার অনুদান একটি জীবন বদলে দিতে পারে। আমাদের সঙ্গে এগিয়ে চলুন একটি অন্তর্ভুক্তিমূলক ও মর্যাদাপূর্ণ সমাজ গঠনের পথে।
-					</p>
-				</div>
+	<!-- Banner Section -->
+	<div
+		role="banner"
+		class="w-full flex items-center text-white bg-center bg-auto"
+		style="min-height: 10rem; height: 60vh; background-image: url('/images/banner/rec_banner.png')"
+		aria-label="Accessibility and legal compliance notification">
+		<div class="flex items-center text-center container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 font-bangla">
+			<div class="text-white flex flex-col items-start justify-center text-start">
+				<h1 class="text-3xl text-[#F5C304] md:text-2xl lg:text-3xl font-bold mb-4">ভবিষ্যত পরিকল্পনায় তহবিলের প্রয়োজন</h1>
+				<p class="text-sm md:text-sm leading-relaxed">
+					আমরা চাই আমাদের সেবার পরিধি আরও বাড়াতে-নতুন প্রশিক্ষণ কেন্দ্র, আধুনিক স্বাস্থ্যসেবা সুবিধা, আরও বেশি সংখ্যক সুবিধাভোগীদের অন্তর্ভুক্তি, এবং
+					দীর্ঘমেয়াদি উন্নয়ন পরিকল্পনার বাস্তবায়ন। এজন্য প্রয়োজন আরও শক্তিশালী অর্থনৈতিক সহায়তা ও দীর্ঘস্থায়ী দাতাসমূহের অংশগ্রহণ। আপনার অনুদান একটি জীবন
+					বদলে দিতে পারে। আমাদের সঙ্গে এগিয়ে চলুন একটি অন্তর্ভুক্তিমূলক ও মর্যাদাপূর্ণ সমাজ গঠনের পথে।
+				</p>
 			</div>
 		</div>
+	</div>
 </template>
 
 <script setup></script>
