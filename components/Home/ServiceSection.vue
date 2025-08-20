@@ -3,21 +3,21 @@
 		<!-- Header Section -->
 		<div class="text-center mb-16" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
 			<div
-				class="inline-block bg-yellow-100 text-[#1F5747] px-4 py-2 rounded-full text-sm font-medium mb-6 font-bangla hover:bg-yellow-200 transition-colors duration-300"
+				class="inline-block bg-yellow-100 text-[#1F5747] px-4 py-2 rounded-full text-sm font-medium mb-6  hover:bg-yellow-200 transition-colors duration-300"
 				data-aos="zoom-in"
 				data-aos-duration="600"
 				data-aos-delay="200">
 				আমাদের সেবা
 			</div>
 			<h1
-				class="text-3xl md:text-2xl font-bold text-[#114F3F] mb-4 font-bangla hover:text-teal-600 transition-colors duration-300"
+				class="text-3xl md:text-2xl font-bold text-[#114F3F] mb-4  hover:text-teal-600 transition-colors duration-300"
 				data-aos="fade-up"
 				data-aos-duration="800"
 				data-aos-delay="300">
 				আমরা যা করি
 			</h1>
 			<p
-				class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed font-bangla hover:text-gray-800 transition-colors duration-300"
+				class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed  hover:text-gray-800 transition-colors duration-300"
 				data-aos="fade-up"
 				data-aos-duration="1000"
 				data-aos-delay="400">
@@ -46,13 +46,13 @@
 						</div>
 					</div>
 					<div class="absolute bottom-4 left-4 right-4" data-aos="slide-up" data-aos-duration="600" data-aos-delay="600">
-						<h3 class="text-xl font-bold text-white font-bangla group-hover:text-yellow-200 transition-colors duration-300">
+						<h3 class="text-xl font-bold text-white  group-hover:text-yellow-200 transition-colors duration-300">
 							চিকিৎসা সহায়তা ও পুনর্বাসন
 						</h3>
 					</div>
 				</div>
 				<div
-					class="p-2 text-gray-600 text-sm leading-relaxed font-bangla group-hover:text-gray-800 transition-colors duration-300"
+					class="p-2 text-gray-600 text-sm leading-relaxed  group-hover:text-gray-800 transition-colors duration-300"
 					data-aos="fade-up"
 					data-aos-duration="800"
 					data-aos-delay="700">
@@ -84,11 +84,11 @@
 						</div>
 					</div>
 					<div class="absolute bottom-4 left-4 right-4" data-aos="slide-up" data-aos-duration="600" data-aos-delay="700">
-						<h3 class="text-xl font-bold text-white font-bangla group-hover:text-yellow-200 transition-colors duration-300">দুর্বলদের যত্ন</h3>
+						<h3 class="text-xl font-bold text-white  group-hover:text-yellow-200 transition-colors duration-300">দুর্বলদের যত্ন</h3>
 					</div>
 				</div>
 				<p
-					class="p-2 text-gray-600 text-sm leading-relaxed font-bangla group-hover:text-gray-800 transition-colors duration-300"
+					class="p-2 text-gray-600 text-sm leading-relaxed  group-hover:text-gray-800 transition-colors duration-300"
 					data-aos="fade-up"
 					data-aos-duration="800"
 					data-aos-delay="800">
@@ -115,11 +115,11 @@
 						</div>
 					</div>
 					<div class="absolute bottom-4 left-4 right-4" data-aos="slide-up" data-aos-duration="600" data-aos-delay="800">
-						<h3 class="text-xl font-bold text-white font-bangla group-hover:text-yellow-200 transition-colors duration-300">শিক্ষা ও প্রশিক্ষণ</h3>
+						<h3 class="text-xl font-bold text-white  group-hover:text-yellow-200 transition-colors duration-300">শিক্ষা ও প্রশিক্ষণ</h3>
 					</div>
 				</div>
 				<p
-					class="p-2 text-gray-600 text-sm leading-relaxed font-bangla group-hover:text-gray-800 transition-colors duration-300"
+					class="p-2 text-gray-600 text-sm leading-relaxed  group-hover:text-gray-800 transition-colors duration-300"
 					data-aos="fade-up"
 					data-aos-duration="800"
 					data-aos-delay="900">
@@ -146,11 +146,11 @@
 						</div>
 					</div>
 					<div class="absolute bottom-4 left-4 right-4" data-aos="slide-up" data-aos-duration="600" data-aos-delay="900">
-						<h3 class="text-xl font-bold text-white font-bangla group-hover:text-yellow-200 transition-colors duration-300">স্বাস্থ্য ও পুষ্টি সেবা</h3>
+						<h3 class="text-xl font-bold text-white  group-hover:text-yellow-200 transition-colors duration-300">স্বাস্থ্য ও পুষ্টি সেবা</h3>
 					</div>
 				</div>
 				<div
-					class="p-2 text-gray-600 text-sm leading-relaxed font-bangla group-hover:text-gray-800 transition-colors duration-300"
+					class="p-2 text-gray-600 text-sm leading-relaxed  group-hover:text-gray-800 transition-colors duration-300"
 					data-aos="fade-up"
 					data-aos-duration="800"
 					data-aos-delay="1000">
@@ -182,11 +182,11 @@
 						</div>
 					</div>
 					<div class="absolute bottom-4 left-4 right-4" data-aos="slide-up" data-aos-duration="600" data-aos-delay="1000">
-						<h3 class="text-xl font-bold text-white font-bangla group-hover:text-yellow-200 transition-colors duration-300">মানসিক স্বাস্থ্য সহায়তা</h3>
+						<h3 class="text-xl font-bold text-white  group-hover:text-yellow-200 transition-colors duration-300">মানসিক স্বাস্থ্য সহায়তা</h3>
 					</div>
 				</div>
 				<div
-					class="p-2 text-gray-600 text-sm leading-relaxed font-bangla group-hover:text-gray-800 transition-colors duration-300"
+					class="p-2 text-gray-600 text-sm leading-relaxed  group-hover:text-gray-800 transition-colors duration-300"
 					data-aos="fade-up"
 					data-aos-duration="800"
 					data-aos-delay="1100">
@@ -218,13 +218,13 @@
 						</div>
 					</div>
 					<div class="absolute bottom-4 left-4 right-4" data-aos="slide-up" data-aos-duration="600" data-aos-delay="1100">
-						<h3 class="text-xl font-bold text-white font-bangla group-hover:text-yellow-200 transition-colors duration-300">
+						<h3 class="text-xl font-bold text-white  group-hover:text-yellow-200 transition-colors duration-300">
 							সামাজিক সচেতনতা সৃষ্টি ও নীতি উন্নয়ন
 						</h3>
 					</div>
 				</div>
 				<p
-					class="text-gray-600 p-2 text-sm leading-relaxed font-bangla group-hover:text-gray-800 transition-colors duration-300"
+					class="text-gray-600 p-2 text-sm leading-relaxed  group-hover:text-gray-800 transition-colors duration-300"
 					data-aos="fade-up"
 					data-aos-duration="800"
 					data-aos-delay="1200">
@@ -253,9 +253,7 @@
 </script>
 
 <style scoped>
-	.font-bangla {
-		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
-	}
+	
 
 	/* Custom animation styles */
 	@keyframes shimmer {
@@ -322,7 +320,7 @@
 	@keyframes slideInRight {
 		from {
 			opacity: 0;
-			transform: translateX(-20px);
+			transform: translateX(-6px);
 		}
 		to {
 			opacity: 1;

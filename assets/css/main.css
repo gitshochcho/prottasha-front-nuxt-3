@@ -1,24 +1,87 @@
 @font-face {
-  font-family: 'Circular-Std-Light';
-  src: url('/fonts/CircularStd/CircularStd-Light.otf');
+    font-family: 'Hind-Siliguri';
+    src: url('/fonts/Hind_Siliguri/HindSiliguri-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    size-adjust: 112%;
+}
+@font-face {
+    font-family: 'Hind-Siliguri-Regular';
+    src: url('/fonts/Hind_Siliguri/HindSiliguri-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    size-adjust: 105%;
+}
+@font-face {
+    font-family: 'Hind-Siliguri-Medium';
+    src: url('/fonts/Hind_Siliguri/HindSiliguri-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+    size-adjust: 105%;
+}
+@font-face {
+    font-family: 'Hind-Siliguri-Bold';
+    src: url('/fonts/Hind_Siliguri/HindSiliguri-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    size-adjust: 105%;
+}
+
+
+
+@font-face {
+  font-family: 'Noto_Sans_Bengali';
+  src: url('/fonts/Noto_Sans_Bengali/static/NotoSansBengali_Condensed-Light.ttf');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Circular-Std-Regular';
-  src: url('/fonts/CircularStd/CircularStd-Black.otf');
+  font-family: 'Noto_Sans_Bengali-Regular';
+  src: url('/fonts/Noto_Sans_Bengali/static/NotoSansBengali_Condensed-Regular.ttf');
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Circular-Std-Medium';
-  src: url('/fonts/CircularStd/CircularStd-Medium.otf');
+  font-family: 'Noto_Sans_Bengali-Medium';
+  src: url('/fonts/Noto_Sans_Bengali/static/NotoSansBengali_Condensed-Medium.ttf');
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Circular-Std-Bold';
-  src: url('/fonts/CircularStd/CircularStd-Bold.otf');
+  font-family: 'Noto_Sans_Bengali-Bold';
+  src: url('/fonts/Noto_Sans_Bengali/static/NotoSansBengali_Condensed-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/* poppins  */
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('/fonts/Poppins/Poppins-Light.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Regular';
+  src: url('/fonts/Poppins/Poppins-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Medium';
+  src: url('/fonts/Poppins/Poppins-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins-Bold';
+  src: url('/fonts/Poppins/Poppins-Bold.ttf');
   font-weight: 700;
   font-style: normal;
 }
@@ -28,7 +91,10 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Circular-Std-Light', sans-serif;
+  font-family: 'Poppins', 'Hind-Siliguri';
+}
+.heading_font{
+    font-family: 'Hind-Siliguri';
 }
 .custom-container {
   @apply py-20 my-0 mx-44 sm:mx-7 md:mx-24 lg:mx-44;

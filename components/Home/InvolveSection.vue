@@ -59,10 +59,10 @@
 						</div>
 					</div>
 
-					<button
+					<NuxtLink to="/volunteer-join-form"
 						class="w-full bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
 						যুক্ত হোন →
-					</button>
+					</NuxtLink>
 				</div>
 
 				<!-- Join Professional Positions -->
@@ -100,10 +100,11 @@
 						</div>
 					</div>
 
-					<button
+					<NuxtLink
+                        to="/"
 						class="w-full bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
 						আবেদন করুন  →
-					</button>
+					</NuxtLink>
 				</div>
 
 				<!-- Donate -->
@@ -141,10 +142,10 @@
 						</div>
 					</div>
 
-					<button
+					<NuxtLink to="/donation-form"
 						class="w-full bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
 						দান করুন →
-					</button>
+					</NuxtLink>
 				</div>
 			</div>
 		</div>
@@ -156,7 +157,5 @@
 </script>
 
 <style scoped>
-	.font-bangla {
-		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
-	}
+	
 </style>

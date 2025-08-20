@@ -60,14 +60,12 @@
 		{
 			id: 1,
 			hl: "Prottaysha | Donation Management System",
-			img: "/images/slider/background.png",
+			img: "/images/banner/banner-about.png",
 			url: "https://www.youtube.com/embed/9pqdJ5Qmfn4?si=YoeaubtKd3OcDwET",
 		},
 	])
 </script>
 
 <style scoped>
-	.font-bangla {
-		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
-	}
+	
 </style>

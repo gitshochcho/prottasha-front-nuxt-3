@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 my-12 font-bangla">
+	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 my-12 ">
 		<!-- Header section -->
 		<div class="mb-12">
 			<h1 class="text-4xl text-center md:text-3xl font-bold text-[#00725E] mb-8">আমাদের সম্পর্কে</h1>

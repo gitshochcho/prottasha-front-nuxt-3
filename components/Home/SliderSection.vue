@@ -2,7 +2,7 @@
 	<div class="hero-bg flex items-center w-full relative overflow-hidden">
 		<!-- Dark Overlay -->
 		<div class="absolute inset-0 bg-black/70"></div>
-
+		<img class="absolute bottom-0 left-0" src="/svg/about/leaf.svg" alt="" />
 		<!-- Animated Background Elements -->
 		<div class="absolute inset-0 overflow-hidden">
 			<div class="floating-shape absolute top-20 left-10 w-20 h-20 bg-yellow-400/10 rounded-full"></div>
@@ -15,19 +15,16 @@
 			<div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center lg:items-start">
 				<!-- Left Content Section -->
 				<div
-					v-animateonscroll="{
-						enterClass: 'animate-fadeinleft',
-						leaveClass: 'animate-fadeoutleft',
-					}"
-					class="text-white space-y-6 md:space-y-8 flex-1 flex flex-col justify-center h-full text-center lg:text-left order-1 lg:order-1">
+					class="text-white space-y-6 md:space-y-8 flex-1 flex flex-col justify-center h-full text-center lg:text-left order-1 lg:order-1"
+					data-aos="fade-right"
+					data-aos-duration="800"
+					data-aos-once="false">
 					<!-- Trust Badge -->
-					<div
-						class="inline-flex w-auto max-w-xs mx-auto lg:mx-0 items-center bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer"
-						v-animateonscroll="{
-							enterClass: 'animate-bounceIn',
-							leaveClass: 'animate-bounceOut',
-						}"
-						:style="{ animationDelay: '0.2s' }">
+					<span
+						class="inline-flex w-auto max-w-52 mx-auto lg:mx-0 items-center bg-[#215D4E] text-white px-4 py-2 rounded-full text-sm font-medium shadow-lg transform hover:scale-105 transition-all duration-300 cursor-pointer"
+						data-aos="bounce-in"
+						data-aos-delay="200"
+						data-aos-once="false">
 						<svg class="w-5 h-5 mr-2 flex-shrink-0 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
 							<path
 								fill-rule="evenodd"
@@ -35,16 +32,10 @@
 								clip-rule="evenodd" />
 						</svg>
 						১০০০+ পরিবারের আস্থা
-					</div>
+					</span>
 
 					<!-- Main Heading -->
-					<h1
-						class="text-4xl sm:text-5xl lg:text-3xl xl:text-4xl font-bold leading-tight"
-						v-animateonscroll="{
-							enterClass: 'animate-fadeintop',
-							leaveClass: 'animate-fadeouttop',
-						}"
-						:style="{ animationDelay: '0.4s' }">
+					<h1 class="text-4xl sm:text-5xl lg:text-3xl xl:text-4xl font-bold leading-tight" data-aos="fade-down" data-aos-delay="400" data-aos-once="false">
 						<span class="inline-block typing-animation">সবার জন্য</span><br />
 						<span class="text-yellow-400 inline-block glow-text">সমান সুযোগ</span><br />
 					</h1>
@@ -52,44 +43,28 @@
 					<!-- Description -->
 					<p
 						class="text-base sm:text-lg lg:text-base xl:text-lg text-gray-200 max-w-2xl lg:max-w-xl leading-relaxed mx-auto lg:mx-0"
-						v-animateonscroll="{
-							enterClass: 'animate-fadeinup',
-							leaveClass: 'animate-fadeoutdown',
-						}"
-						:style="{ animationDelay: '0.6s' }">
+						data-aos="fade-up"
+						data-aos-delay="600"
+						data-aos-once="false">
 						প্রতিবন্ধী ব্যক্তিদের অধিকার ও সেবা নিশ্চিতে আমরা কাজ করছি নিরলসভাবে। আসুন, একসাথে গড়ে তুলি এমন এক সমাজ, যেখানে কেউ পিছিয়ে থাকবে না।
 					</p>
 
 					<!-- CTA Buttons -->
-                    <div
-                        class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-                        v-animateonscroll="{
-                            enterClass: 'animate-fadeinup',
-                            leaveClass: 'animate-fadeoutdown',
-                        }"
-                        :style="{ animationDelay: '0.8s' }">
-                        <NuxtLink
-                            to="/volunteer-join-form"
-                            class="bg-yellow-400 hover:bg-yellow-500 text-black text-sm px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl active:scale-95 group"
-                        >
-                            <span class="group-hover:translate-x-1 transition-transform duration-300 inline-block"> আমাদের সাথে যুক্ত হোন </span>
-                        </NuxtLink>
-                        <NuxtLink
-                            to="/about"
-                            class="border-2 border-white text-white hover:bg-white text-sm hover:text-black px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 group"
-                        >
-                            <span class="group-hover:translate-x-1 transition-transform duration-300 inline-block"> আরো জানতে → </span>
-                        </NuxtLink>
-                    </div>
+					<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="800" data-aos-once="false">
+						<NuxtLink
+							to="/volunteer-join-form"
+							class="bg-yellow-400 hover:bg-yellow-500 text-black text-sm px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl active:scale-95 group">
+							<span class="group-hover:translate-x-1 transition-transform duration-300 inline-block"> আমাদের সাথে যুক্ত হোন </span>
+						</NuxtLink>
+						<NuxtLink
+							to="/about"
+							class="border-2 border-white text-white hover:bg-white text-sm hover:text-black px-6 py-2 rounded-lg transition-all duration-300 transform hover:scale-105 group">
+							<span class="group-hover:translate-x-1 transition-transform duration-300 inline-block"> আরো জানতে → </span>
+						</NuxtLink>
+					</div>
 
 					<!-- Statistics -->
-					<div
-						class="flex flex-wrap gap-6 pt-2 justify-center lg:justify-start"
-						v-animateonscroll="{
-							enterClass: 'animate-fadeinup',
-							leaveClass: 'animate-fadeoutdown',
-						}"
-						:style="{ animationDelay: '1s' }">
+					<div class="flex flex-wrap gap-6 pt-2 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="1000" data-aos-once="false">
 						<div class="text-center lg:text-left flex-shrink-0 hover:scale-110 transition-transform duration-300 cursor-pointer group">
 							<div class="text-2xl sm:text-3xl lg:text-3xl font-bold text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">
 								<span class="counter" data-target="500">০</span>+
@@ -106,13 +81,13 @@
 							<div class="text-2xl sm:text-3xl lg:text-3xl font-bold text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">
 								<span class="counter" data-target="25">০</span>+
 							</div>
-							<div class="text-sm text-gray-300 font-medium">Partner Organizations</div>
+							<div class="text-sm text-gray-300 font-medium">অংশীদার সংস্থা</div>
 						</div>
 						<div class="text-center lg:text-left flex-shrink-0 hover:scale-110 transition-transform duration-300 cursor-pointer group">
 							<div class="text-2xl sm:text-3xl lg:text-3xl font-bold text-yellow-400 group-hover:text-yellow-300 transition-colors duration-300">
 								<span class="counter" data-target="850">০</span>+
 							</div>
-							<div class="text-sm text-gray-300 font-medium">Volunteers</div>
+							<div class="text-sm text-gray-300 font-medium">স্বেচ্ছাসেবক</div>
 						</div>
 					</div>
 				</div>
@@ -120,11 +95,9 @@
 				<!-- Right Content Section - Images -->
 				<div
 					class="relative flex justify-center lg:justify-end flex-1 h-full items-start order-2 lg:order-2 w-full"
-					v-animateonscroll="{
-						enterClass: 'animate-fadeinright',
-						leaveClass: 'animate-fadeoutright',
-					}"
-					:style="{ animationDelay: '0.3s' }">
+					data-aos="fade-left"
+					data-aos-delay="300"
+					data-aos-once="false">
 					<!-- Main Images Container -->
 					<div class="relative scale-90 sm:scale-100">
 						<!-- Background Child Image (larger) -->
@@ -139,18 +112,34 @@
 
 						<!-- Floating Statistics Card -->
 						<div
-							class="absolute -top-2 -right-4 sm:-top-5 sm:-right-8 lg:-top-3 lg:-right-1"
-							v-animateonscroll="{
-								enterClass: 'animate-bounceIn',
-								leaveClass: 'animate-bounceOut',
-							}"
-							:style="{ animationDelay: '1.2s' }">
+							class="absolute -top-1 -right-2 sm:-top-5 sm:-right-8 lg:-top-3 lg:-right-1"
+							data-aos="bounce-in"
+							data-aos-delay="1200"
+							data-aos-once="false">
 							<div
-								class="floating-card bg-yellow-400 text-black p-3 sm:p-4 rounded-xl shadow-lg transform -rotate-6 hover:rotate-0 transition-all duration-500 cursor-pointer hover:shadow-2xl max-w-[140px] sm:max-w-none">
-								<div class="text-center">
-									<span class="block text-xs sm:text-sm text-[#094C3B] font-medium">সফলতার সাথে</span>
-									<span class="block text-lg sm:text-xl font-bold text-[#094C3B] my-1">৫০+</span>
-									<span class="block text-xs sm:text-sm font-medium">শিশুর জীবন পরিবর্তন</span>
+								class="floating-card bg-yellow-400 text-black p-2 sm:p-4 rounded-xl shadow-lg transform -rotate-6 hover:rotate-0 transition-all duration-500 cursor-pointer hover:shadow-2xl w-32 sm:w-40 md:w-auto">
+								<div class="flex flex-wrap gap-x-2 justify-center items-center text-center">
+									<span class="flex-shrink-0">
+										<svg xmlns="http://www.w3.org/2000/svg" width="20" height="14" viewBox="0 0 24 16" fill="none" class="w-5 h-4 sm:w-6 sm:h-5">
+											<path
+												d="M23.1003 8.41401L22.7504 1.67309L16.0095 2.02299"
+												stroke="#094C3B"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+											<path
+												d="M22.7539 1.67303L15.2372 10.0129C15.1053 10.1593 14.9458 10.2783 14.7679 10.3631C14.59 10.4479 14.3972 10.4968 14.2004 10.507C14.0036 10.5172 13.8067 10.4885 13.621 10.4226C13.4353 10.3567 13.2644 10.2549 13.118 10.1229L9.83207 7.16125C9.68573 7.02926 9.51482 6.92741 9.3291 6.86151C9.14339 6.79561 8.9465 6.76694 8.7497 6.77716C8.55291 6.78737 8.36005 6.83627 8.18215 6.92104C8.00426 7.00582 7.84481 7.12482 7.71292 7.27125L0.90625 14.8232"
+												stroke="#094C3B"
+												stroke-width="1.5"
+												stroke-linecap="round"
+												stroke-linejoin="round" />
+										</svg>
+									</span>
+									<div class="flex flex-col">
+										<span class="block text-2xs sm:text-xs md:text-sm text-[#094C3B] font-medium">সফলতার সাথে</span>
+										<span class="block text-base sm:text-lg md:text-xl font-bold text-[#094C3B] my-0.5 sm:my-1">৫০+</span>
+										<span class="block text-2xs sm:text-xs md:text-sm font-medium">শিশুর জীবন পরিবর্তন</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -158,11 +147,9 @@
 						<!-- Testimonial Card -->
 						<div
 							class="testimonial-card absolute -bottom-4 -left-4 sm:-bottom-8 sm:left-8 lg:-bottom-10 lg:-right-6 p-3 sm:p-4 lg:p-4 rounded-xl max-w-xs sm:max-w-sm lg:max-w-md hover:shadow-3xl transition-all duration-500 transform hover:scale-105"
-							v-animateonscroll="{
-								enterClass: 'animate-fadeinup',
-								leaveClass: 'animate-fadeoutdown',
-							}"
-							:style="{ animationDelay: '1.4s' }">
+							data-aos="fade-up"
+							data-aos-delay="1400"
+							data-aos-once="false">
 							<div class="flex items-start space-x-3">
 								<div class="w-8 h-8 sm:w-10 sm:h-10 bg-yellow-400 rounded-full flex items-center justify-center flex-shrink-0 animate-pulse">
 									<svg class="w-4 h-4 sm:w-5 sm:h-5 text-black" fill="currentColor" viewBox="0 0 20 20">
@@ -189,7 +176,15 @@
 </template>
 
 <script setup>
-	import { onMounted, nextTick } from "vue"
+	// Bengali number converter function
+	const toBengaliNumber = (num) => {
+		const bengaliDigits = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"]
+		return num
+			.toString()
+			.split("")
+			.map((digit) => bengaliDigits[parseInt(digit)])
+			.join("")
+	}
 
 	// Counter animation function
 	const animateCounter = (element, target) => {
@@ -199,10 +194,10 @@
 		const timer = setInterval(() => {
 			current += increment
 			if (current >= target) {
-				element.textContent = target.toString()
+				element.textContent = toBengaliNumber(target)
 				clearInterval(timer)
 			} else {
-				element.textContent = Math.floor(current).toString()
+				element.textContent = toBengaliNumber(Math.floor(current))
 			}
 		}, 20)
 	}
@@ -234,7 +229,7 @@
 
 <style scoped>
 	.hero-bg {
-		background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/public/images/slider/background.png");
+		background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 80%), url("/public/images/slider/background.png");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -526,5 +521,11 @@
 	.counter {
 		display: inline-block;
 		font-variant-numeric: tabular-nums;
+		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
+	}
+
+	/* Enhanced hover effects */
+	.group:hover .counter {
+		transform: scale(1.1);
 	}
 </style>

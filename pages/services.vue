@@ -1,5 +1,5 @@
 <template>
-	<section class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 my-12 font-bangla">
+	<section class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 my-12 ">
 		<div class="">
 			<!-- Header -->
 			<div class="text-center mb-16">
@@ -135,7 +135,7 @@
 </script>
 
 <style scoped>
-	.font-bangla {
+	. {
 		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
 	}
 

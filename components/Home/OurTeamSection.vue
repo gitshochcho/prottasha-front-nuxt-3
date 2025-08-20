@@ -8,7 +8,7 @@
             data-aos-delay="100"
         >
             <div 
-                class="inline-block bg-amber-100 text-amber-800 px-6 py-3 rounded-full text-sm font-medium mb-6 font-bangla hover:bg-amber-200 transition-colors duration-300"
+                class="inline-block bg-amber-100 text-amber-800 px-6 py-3 rounded-full text-sm font-medium mb-6  hover:bg-amber-200 transition-colors duration-300"
                 data-aos="zoom-in"
                 data-aos-duration="600"
                 data-aos-delay="200"
@@ -16,7 +16,7 @@
                 আমাদের টিম
             </div>
             <h1 
-                class="text-4xl md:text-5xl font-bold text-gray-800 mb-6 font-bangla hover:text-teal-600 transition-colors duration-300"
+                class="text-4xl md:text-5xl font-bold text-gray-800 mb-6  hover:text-teal-600 transition-colors duration-300"
                 data-aos="fade-up"
                 data-aos-duration="800"
                 data-aos-delay="300"
@@ -24,7 +24,7 @@
                 প্রতিবন্ধিতা: ইন টিম
             </h1>
             <p 
-                class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed font-bangla hover:text-gray-800 transition-colors duration-300"
+                class="text-gray-600 text-lg max-w-3xl mx-auto leading-relaxed  hover:text-gray-800 transition-colors duration-300"
                 data-aos="fade-up"
                 data-aos-duration="1000"
                 data-aos-delay="400"
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <h3 
-                    class="text-xl font-semibold text-gray-800 mb-3 font-bangla group-hover:text-red-600 transition-colors duration-300"
+                    class="text-xl font-semibold text-gray-800 mb-3  group-hover:text-red-600 transition-colors duration-300"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="500"
@@ -93,7 +93,7 @@
                     </div>
                 </div>
                 <h3 
-                    class="text-xl font-semibold text-gray-800 mb-3 font-bangla group-hover:text-blue-600 transition-colors duration-300"
+                    class="text-xl font-semibold text-gray-800 mb-3  group-hover:text-blue-600 transition-colors duration-300"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="600"
@@ -128,7 +128,7 @@
                     </div>
                 </div>
                 <h3 
-                    class="text-xl font-semibold text-gray-800 mb-3 font-bangla group-hover:text-teal-600 transition-colors duration-300"
+                    class="text-xl font-semibold text-gray-800 mb-3  group-hover:text-teal-600 transition-colors duration-300"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="700"
@@ -163,7 +163,7 @@
                     </div>
                 </div>
                 <h3 
-                    class="text-xl font-semibold text-gray-800 mb-3 font-bangla group-hover:text-green-600 transition-colors duration-300"
+                    class="text-xl font-semibold text-gray-800 mb-3  group-hover:text-green-600 transition-colors duration-300"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="800"
@@ -198,7 +198,7 @@
                     </div>
                 </div>
                 <h3 
-                    class="text-xl font-semibold text-gray-800 mb-3 font-bangla group-hover:text-purple-600 transition-colors duration-300"
+                    class="text-xl font-semibold text-gray-800 mb-3  group-hover:text-purple-600 transition-colors duration-300"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="900"
@@ -233,7 +233,7 @@
                     </div>
                 </div>
                 <h3 
-                    class="text-xl font-semibold text-gray-800 mb-3 font-bangla group-hover:text-orange-600 transition-colors duration-300"
+                    class="text-xl font-semibold text-gray-800 mb-3  group-hover:text-orange-600 transition-colors duration-300"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="1000"
@@ -268,7 +268,7 @@
                     </div>
                 </div>
                 <h3 
-                    class="text-xl font-semibold text-gray-800 mb-3 font-bangla group-hover:text-indigo-600 transition-colors duration-300"
+                    class="text-xl font-semibold text-gray-800 mb-3  group-hover:text-indigo-600 transition-colors duration-300"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="1100"
@@ -303,7 +303,7 @@
                     </div>
                 </div>
                 <h3 
-                    class="text-xl font-semibold text-gray-800 mb-3 font-bangla group-hover:text-emerald-600 transition-colors duration-300"
+                    class="text-xl font-semibold text-gray-800 mb-3  group-hover:text-emerald-600 transition-colors duration-300"
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="1200"
@@ -335,7 +335,7 @@
                 data-aos-delay="600"
             >
                 <h3 
-                    class="text-2xl font-bold text-gray-800 mb-4 font-bangla"
+                    class="text-2xl font-bold text-gray-800 mb-4 "
                     data-aos="fade-up"
                     data-aos-duration="600"
                     data-aos-delay="700"
@@ -343,21 +343,21 @@
                     আমাদের সাথে যোগ দিন
                 </h3>
                 <p 
-                    class="text-gray-600 mb-6 max-w-2xl mx-auto font-bangla"
+                    class="text-gray-600 mb-6 max-w-2xl mx-auto "
                     data-aos="fade-up"
                     data-aos-duration="800"
                     data-aos-delay="800"
                 >
                     প্রতিবন্ধী ব্যক্তিদের সেবায় আমাদের টিমে যোগদান করুন এবং একটি অন্তর্ভুক্তিমূলক সমাজ গড়তে অংশগ্রহণ করুন।
                 </p>
-                <button 
-                    class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300 font-bangla hover:scale-105 hover:shadow-lg"
+                <NuxtLink to="/volunteer-join-form" 
+                    class="bg-teal-600 hover:bg-teal-700 text-white px-8 py-3 rounded-lg font-medium transition-all duration-300  hover:scale-105 hover:shadow-lg"
                     data-aos="zoom-in"
                     data-aos-duration="600"
                     data-aos-delay="900"
                 >
                     যোগদান করুন
-                </button>
+                </NuxtLink>
             </div>
         </div>
     </div>
@@ -381,9 +381,7 @@ onMounted(() => {
 </script>
 
 <style scoped>
-.font-bangla {
-    font-family: 'SolaimanLipi', 'Kalpurush', sans-serif;
-}
+
 
 /* Custom animation styles */
 @keyframes float {

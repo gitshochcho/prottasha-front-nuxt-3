@@ -1,6 +1,6 @@
 <template>
 	<!-- Success Story Content Section -->
-	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 font-bangla" style="background: linear-gradient(180deg, #d8fff8 0%, #fff 100%)">
+	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 " style="background: linear-gradient(180deg, #d8fff8 0%, #fff 100%)">
 		<div class="">
 			<div class="grid pt-4 md:pt-0 grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 				<!-- Left Content -->

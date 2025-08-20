@@ -1,5 +1,5 @@
 <template>
-	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 pb-16 font-bangla">
+	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 pb-16 ">
 		<!-- Our Goals Section -->
 		<div class="mb-20">
 			<h2 class="text-3xl font-bold text-green-700 mb-6 text-center">আমাদের কাজ</h2>
@@ -85,7 +85,5 @@
 </script>
 
 <style lang="scss" scoped>
-	.font-bangla {
-		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
-	}
+	
 </style>

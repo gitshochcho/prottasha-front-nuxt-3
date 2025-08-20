@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-[#00725E] py-16 px-4 relative overflow-hidden font-bangla">
+	<div class="bg-[#00725E] py-16 px-4 relative overflow-hidden ">
 		<!-- Decorative background elements -->
 		<div class="hidden lg:block absolute top-4 right-4 opacity-40">
 			<img class="w-96" src="/svg/about/design2.svg" alt="" />

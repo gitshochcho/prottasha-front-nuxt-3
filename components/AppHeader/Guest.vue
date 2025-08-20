@@ -188,7 +188,7 @@
 				<ApplicationLogo :width="'100%'" :height="isScrolled ? '40px' : '50px'" />
 			</NuxtLink>
 
-			<div class="flex items-center">
+			<div class="flex items-center gap-4">
 				<!-- Desktop Menu -->
 				<div class="items-center hidden lg:flex lg:justify-between">
 					<!-- Primary Menu Items -->

@@ -28,7 +28,7 @@
 		class="w-full flex items-center text-white bg-center bg-auto"
 		style="min-height: 10rem; height: 60vh; background-image: url('/images/banner/rec_banner.png')"
 		aria-label="Accessibility and legal compliance notification">
-		<div class="flex items-center text-center container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 font-bangla">
+		<div class="flex items-center text-center container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 ">
 			<div class="text-white flex flex-col items-start justify-center text-start">
 				<h1 class="text-3xl text-[#F5C304] md:text-2xl lg:text-3xl font-bold mb-4">ভবিষ্যত পরিকল্পনায় তহবিলের প্রয়োজন</h1>
 				<p class="text-sm md:text-sm leading-relaxed">

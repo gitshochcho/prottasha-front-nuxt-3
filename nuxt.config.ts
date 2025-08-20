@@ -39,6 +39,10 @@ const MyPreset = definePreset(Aura, {
 });
 
 export default defineNuxtConfig({
+    ssr: false,
+    nitro: {
+        preset: 'static',
+    },
     runtimeConfig: {
         public: {
             NUXT_PUBLIC_SITE_URL: process.env.NUXT_PUBLIC_SITE_URL,

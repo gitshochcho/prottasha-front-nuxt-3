@@ -1,5 +1,5 @@
 <template>
-    <div class="container  px-4 sm:px-6 md:px-8 lg:px-12 my-12  mx-auto font-bangla">
+    <div class="container  px-4 sm:px-6 md:px-8 lg:px-12 my-12  mx-auto ">
         <div class="border rounded-lg py-5">
             <!-- Header Section -->
             <div class="text-center mb-12">
@@ -181,9 +181,7 @@ const previousSlide = () => {
 </script>
 
 <style lang="scss" scoped>
-.font-bangla {
-    font-family: 'SolaimanLipi', 'Kalpurush', sans-serif;
-}
+
 
 /* Custom carousel styles */
 :deep(.p-carousel-container) {

@@ -1,5 +1,5 @@
 <template>
-	<div class="relative bg-cover bg-center bg-no-repeat font-bangla" style="background-image: url('/images/profession/joinbanner.png')">
+	<div class="relative bg-cover bg-center bg-no-repeat " style="background-image: url('/images/profession/joinbanner.png')">
 		<!-- Overlay -->
 		<div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
@@ -111,9 +111,7 @@
 </script>
 
 <style lang="scss" scoped>
-	.font-bangla {
-		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
-	}
+	
 
 	/* Custom responsive adjustments */
 	@media (max-width: 1024px) {

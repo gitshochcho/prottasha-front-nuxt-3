@@ -1,6 +1,6 @@
 <template>
-    <div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 my-12">
-        <div class="relative bg-gray-100 rounded-3xl py-16 px-8 overflow-hidden min-h-[500px]">
+    <div class="container bg-[#CFDFDB80] mx-auto px-4 sm:px-6 md:px-8 lg:px-12 ">
+        <div class="relative  rounded-3xl py-16 px-8 overflow-hidden min-h-[500px]">
             <!-- Header Section -->
             <div class="text-center mb-12">
                 <div class="inline-block bg-amber-100 text-amber-800 px-4 py-2 rounded-full text-sm font-medium mb-6">
@@ -14,9 +14,42 @@
                 </h3>
             </div>
 
-            <!-- Floating Profile Images -->
+             <!-- Floating Profile Images -->
             <div class="absolute inset-0 pointer-events-none">
+                <!-- Top left profile -->
+                <div class="absolute top-16 left-8 w-12 h-12 rounded-full bg-white shadow-lg overflow-hidden opacity-70">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=face" alt="Profile" class="w-full h-full object-cover">
+                </div>
                 
+                <!-- Top center profile -->
+                <div class="absolute top-8 left-1/2 transform -translate-x-1/2 w-10 h-10 rounded-full bg-white shadow-lg overflow-hidden opacity-60">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face" alt="Profile" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Top right profile -->
+                <div class="absolute top-16 right-8 w-14 h-14 rounded-full bg-white shadow-lg overflow-hidden opacity-75">
+                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face" alt="Profile" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Left side profile -->
+                <div class="absolute top-1/3 left-4 w-11 h-11 rounded-full bg-white shadow-lg overflow-hidden opacity-65">
+                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=face" alt="Profile" class="w-full h-11 object-cover">
+                </div>
+
+                <!-- Right side profile (upper) -->
+                <div class="absolute top-1/4 right-12 w-10 h-10 rounded-full bg-white shadow-lg overflow-hidden opacity-60">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=face" alt="Profile" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Right side profile (middle) -->
+                <div class="absolute top-1/2 right-4 w-12 h-12 rounded-full bg-white shadow-lg overflow-hidden opacity-70">
+                    <img src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?w=150&h=150&fit=crop&crop=face" alt="Profile" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Bottom left profile -->
+                <div class="absolute bottom-16 left-12 w-10 h-10 rounded-full bg-white shadow-lg overflow-hidden opacity-55">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face" alt="Profile" class="w-full h-full object-cover">
+                </div>
             </div>
 
             <!-- PrimeVue Carousel for Testimonials -->
@@ -97,7 +130,7 @@ const testimonials = ref([
         name: "সারা জনসন",
         location: "পোর্টল্যান্ড, ওরেগন",
         quote: "এই সংগঠনটি আমাদের কমিউনিটিতে যে প্রভাব ফেলেছে তা অসাধারণ। তাদের কার্যক্রম অনেক পরিবারকে নতুন আশা ও পরিবর্তন এনে দিয়েছে। 🌟",
-        image: "https://images.unsplash.com/photo-1494790108755-2616b612b17c?w=150&h=150&fit=crop&crop=face"
+        image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
     },
     {
         id: 3,

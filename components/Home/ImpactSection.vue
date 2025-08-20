@@ -2,19 +2,19 @@
 	<div class="relative overflow-hidden" style="background-image: url('/images/slider/background-2.png')">
 		<!-- Background Pattern -->
 		<div class="absolute inset-0 opacity-10" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
-			<!-- You can add background pattern images here if needed -->
+			
 		</div>
 
 		<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-16 relative z-10">
 			<!-- Header Section -->
 			<div class="text-center mb-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 				<div class="mb-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-					<span class="bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-medium font-bangla hover:bg-yellow-400 transition-colors duration-300">
+					<span class="bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-medium  hover:bg-yellow-400 transition-colors duration-300">
 						আমাদের প্রভাব
 					</span>
 				</div>
 
-				<h1 class="text-2xl font-bold mb-6 text-white font-bangla" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+				<h1 class="text-2xl font-bold mb-6 text-white " data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
 					<span data-aos="slide-right" data-aos-duration="800" data-aos-delay="500"> একসাথে বদলে দিচ্ছি </span>
 					<br />
 					<span
@@ -27,7 +27,7 @@
 				</h1>
 
 				<p
-					class="text-white/90 max-w-2xl mx-auto leading-relaxed font-bangla hover:text-white transition-colors duration-300"
+					class="text-white/90 max-w-2xl mx-auto leading-relaxed  hover:text-white transition-colors duration-300"
 					data-aos="fade-up"
 					data-aos-duration="1000"
 					data-aos-delay="700">
@@ -60,7 +60,7 @@
 							২৫০০+
 						</div>
 
-						<p class="text-white/80 text-sm font-bangla group-hover:text-white transition-colors duration-300">মানুষ আমাদের সেবা গ্রহণ করেছেন</p>
+						<p class="text-white/80 text-sm  group-hover:text-white transition-colors duration-300">মানুষ আমাদের সেবা গ্রহণ করেছেন</p>
 					</div>
 				</div>
 
@@ -85,7 +85,7 @@
 							data-aos-delay="900">
 							০৬
 						</div>
-						<p class="text-white/80 text-sm font-bangla group-hover:text-white transition-colors duration-300">উপজেলা জুড়ে কার্যক্রম</p>
+						<p class="text-white/80 text-sm  group-hover:text-white transition-colors duration-300">উপজেলা জুড়ে কার্যক্রম</p>
 					</div>
 				</div>
 
@@ -111,7 +111,7 @@
 							৭৪+
 						</div>
 
-						<p class="text-white/80 text-sm font-bangla group-hover:text-white transition-colors duration-300">সক্রিয় স্বেচ্ছাসেবক</p>
+						<p class="text-white/80 text-sm  group-hover:text-white transition-colors duration-300">সক্রিয় স্বেচ্ছাসেবক</p>
 					</div>
 				</div>
 
@@ -137,7 +137,7 @@
 							৮৫০+
 						</div>
 
-						<p class="text-white/80 text-sm font-bangla group-hover:text-white transition-colors duration-300">কর্মসংস্থান সৃষ্টির সফলতা</p>
+						<p class="text-white/80 text-sm  group-hover:text-white transition-colors duration-300">কর্মসংস্থান সৃষ্টির সফলতা</p>
 					</div>
 				</div>
 			</div>
@@ -161,14 +161,14 @@
 
 						<div class="flex-1" data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">
 							<h3
-								class="text-2xl font-bold text-black mb-3 font-bangla group-hover:text-gray-800 transition-colors duration-300"
+								class="text-2xl font-bold text-black mb-3  group-hover:text-gray-800 transition-colors duration-300"
 								data-aos="fade-up"
 								data-aos-duration="600"
 								data-aos-delay="800">
 								আমাদের মিশনকে সহায়তা করুন
 							</h3>
 							<p
-								class="text-black/80 mb-6 leading-relaxed font-bangla group-hover:text-black transition-colors duration-300"
+								class="text-black/80 mb-6 leading-relaxed  group-hover:text-black transition-colors duration-300"
 								data-aos="fade-up"
 								data-aos-duration="800"
 								data-aos-delay="900">
@@ -176,7 +176,7 @@
 							</p>
 
 							<NuxtLink to="donation-form"
-								class="bg-teal-800 hover:bg-teal-900 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 font-bangla hover:scale-105 hover:shadow-lg"
+								class="bg-teal-800 hover:bg-teal-900 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300  hover:scale-105 hover:shadow-lg"
 								data-aos="zoom-in"
 								data-aos-duration="600"
 								data-aos-delay="1000">
@@ -203,14 +203,14 @@
 
 						<div class="flex-1" data-aos="fade-right" data-aos-duration="800" data-aos-delay="800">
 							<h3
-								class="text-2xl font-bold text-white mb-3 font-bangla group-hover:text-yellow-100 transition-colors duration-300"
+								class="text-2xl font-bold text-white mb-3  group-hover:text-yellow-100 transition-colors duration-300"
 								data-aos="fade-up"
 								data-aos-duration="600"
 								data-aos-delay="900">
 								স্বেচ্ছাসেবক হোন
 							</h3>
 							<p
-								class="text-white/80 mb-6 leading-relaxed font-bangla group-hover:text-white transition-colors duration-300"
+								class="text-white/80 mb-6 leading-relaxed  group-hover:text-white transition-colors duration-300"
 								data-aos="fade-up"
 								data-aos-duration="800"
 								data-aos-delay="1000">
@@ -218,7 +218,7 @@
 							</p>
 
 							<NuxtLink to="volunteer-join-form"
-								class="bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-all duration-300 font-bangla hover:scale-105 hover:shadow-lg"
+								class="bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-all duration-300  hover:scale-105 hover:shadow-lg"
 								data-aos="zoom-in"
 								data-aos-duration="600"
 								data-aos-delay="1100">
@@ -250,9 +250,7 @@
 </script>
 
 <style scoped>
-	.font-bangla {
-		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
-	}
+	
 
 	/* Custom animation styles */
 	@keyframes pulse-glow {

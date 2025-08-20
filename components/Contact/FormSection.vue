@@ -178,7 +178,7 @@
 			</div>
 
 			<!-- Right side - Form -->
-			<div class="w-full p-8 md:w-2/3 font-bangla">
+			<div class="w-full p-8 md:w-2/3 ">
 				<div class="space-y-6">
 					<!-- Name and Phone -->
 					<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
@@ -277,9 +277,7 @@
 </template>
 
 <style>
-	.font-bangla {
-		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
-	}
+
 
 	/* Custom focus styles */
 	input:focus,

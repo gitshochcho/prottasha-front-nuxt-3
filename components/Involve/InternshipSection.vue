@@ -1,6 +1,6 @@
 <template>
 	<div class="bg-[#E7EFED] px-4 sm:px-6 md:px-8 lg:px-12 py-12">
-		<div class="container mx-auto font-bangla">
+		<div class="container mx-auto ">
 			<!-- Mission and Vision section -->
 			<div class="grid grid-cols-1 gap-12">
 				<!-- Mission section with image on left -->
@@ -21,7 +21,7 @@
 		</div>
 	</div>
 	<div class="bg-[#F2F8F7] px-4 sm:px-6 md:px-8 lg:px-12 py-12">
-		<div class="container mx-auto font-bangla">
+		<div class="container mx-auto ">
 			<h1 class="text-4xl text-center md:text-3xl font-bold text-[#00725E] mt-16 mb-8">আমাদের সঙ্গে কাজ করুন</h1>
 
 			<!-- Main intro paragraph -->

@@ -73,13 +73,13 @@
 						<NuxtLink to="/about" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
 							আমরা কে
 						</NuxtLink>
-						<NuxtLink to="/facilities" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
+						<NuxtLink to="/services" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
 							অবকাঠামো
 						</NuxtLink>
 						<NuxtLink to="/impact" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
 							আমাদের প্রভাব
 						</NuxtLink>
-						<NuxtLink to="/get-involved" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
+						<NuxtLink to="/volunteer-join-form" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
 							যুক্ত হোন
 						</NuxtLink>
 						<NuxtLink to="/services" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
@@ -107,7 +107,7 @@
 						<NuxtLink to="/donate" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
 							দান করুন
 						</NuxtLink>
-						<NuxtLink to="/volunteer" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
+						<NuxtLink to="/volunteer-join-form" class="text-gray-300 hover:text-yellow-400 transition-all duration-300 text-sm hover:translate-x-1 hover:pl-2">
 							স্বেচ্ছাসেবক হন
 						</NuxtLink>
 					</nav>

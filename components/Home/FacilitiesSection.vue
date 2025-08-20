@@ -87,7 +87,7 @@
 
 				<img
 					class="w-16 absolute bottom-0 right-0 opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-300"
-					src="/svg/about/d1.svg"
+					src="/svg/about/d4.svg"
 					alt="Background decoration" />
 			</div>
 
@@ -124,7 +124,7 @@
 				</ul>
 				<img
 					class="w-16 absolute bottom-0 right-0 opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-300"
-					src="/svg/about/d2.svg"
+					src="/svg/about/d3.svg"
 					alt="Background decoration" />
 			</div>
 
@@ -161,7 +161,7 @@
 				</ul>
 				<img
 					class="w-16 absolute bottom-0 right-0 opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-300"
-					src="/svg/about/d3.svg"
+					src="/svg/about/d2.svg"
 					alt="Background decoration" />
 			</div>
 
@@ -198,7 +198,7 @@
 				</ul>
 				<img
 					class="w-16 absolute bottom-0 right-0 opacity-60 group-hover:opacity-80 group-hover:scale-110 transition-all duration-300"
-					src="/svg/about/d4.svg"
+					src="/svg/about/d1.svg"
 					alt="Background decoration" />
 			</div>
 		</div>
@@ -206,9 +206,7 @@
 </template>
 
 <style scoped>
-	.font-bangla {
-		font-family: "SolaimanLipi", "Kalpurush", sans-serif;
-	}
+	
 
 	/* Additional animation styles */
 	@keyframes float {
