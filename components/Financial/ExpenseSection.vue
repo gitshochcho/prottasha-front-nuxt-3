@@ -13,7 +13,7 @@
 			<!-- Header -->
 			<div class="text-start mb-12">
 				<h2 class="text-2xl font-bold text-yellow-400 mb-4">ব্যয়ের খাতসমূহ</h2>
-				<p class="text-white text-start text-lg max-w-2xl leading-relaxed opacity-90">আমাদের সংস্থার সকল ব্যয়ের বিভিন্ন খাত এবং সেগুলোর বিস্তারিত বিবরণ</p>
+				<p class="text-white text-start text-lg max-w-2xl leading-relaxed opacity-90">প্রাপ্ত অর্থ ব্যবহার করা হয় একাধিক সেবামূলক খাতে, যার মধ্যে উল্লেখযোগ্য</p>
 			</div>
 		</div>
 
@@ -29,7 +29,7 @@
 						</div>
 						<div>
 							<h3 class="text-white text-sm font-semibold mb-1 group-hover:text-yellow-400 transition-colors duration-300">
-								চিকিৎসা ও সার্বিক সহায়তা
+								চিকিৎসা ও সার্জারি সহায়তা
 							</h3>
 						</div>
 					</div>
@@ -40,7 +40,7 @@
 							<div class="w-3 h-3 bg-yellow-400 rounded-sm"></div>
 						</div>
 						<div>
-							<h3 class="text-white text-sm font-semibold mb-1 group-hover:text-yellow-400 transition-colors duration-300">আবাসন ও খাবারের</h3>
+							<h3 class="text-white text-sm font-semibold mb-1 group-hover:text-yellow-400 transition-colors duration-300">আবাসন ও খাদ্যসেবা</h3>
 						</div>
 					</div>
 
@@ -51,7 +51,7 @@
 						</div>
 						<div>
 							<h3 class="text-white text-sm font-semibold mb-1 group-hover:text-yellow-400 transition-colors duration-300">
-								শিক্ষা ও কর্মসূচির প্রশিক্ষণ
+								শিক্ষা ও কারিগরি প্রশিক্ষণ
 							</h3>
 						</div>
 					</div>
@@ -81,7 +81,7 @@
 						</div>
 						<div>
 							<h3 class="text-white text-sm font-semibold mb-1 group-hover:text-yellow-400 transition-colors duration-300">
-								কর্মচারী ও আনুষঙ্গিক কাজ সহায়
+								কর্মসংস্থান ও আয়মুখী কার্যক্রম
 							</h3>
 						</div>
 					</div>
@@ -93,7 +93,7 @@
 						</div>
 						<div>
 							<h3 class="text-white text-sm font-semibold mb-1 group-hover:text-yellow-400 transition-colors duration-300">
-								যাতায়াত ও তহবিল সংগ্রহের
+								স্বাস্থ্যসেবা ও ওষুধ সরবরাহ
 							</h3>
 						</div>
 					</div>
@@ -105,7 +105,7 @@
 						</div>
 						<div>
 							<h3 class="text-white text-sm font-semibold mb-1 group-hover:text-yellow-400 transition-colors duration-300">
-								পরিচালনা ও প্রকাশনার খরচ
+								পরিচালন ও রক্ষণাবেক্ষণ খরচ
 							</h3>
 						</div>
 					</div>
@@ -117,7 +117,7 @@
 						</div>
 						<div>
 							<h3 class="text-white text-sm font-semibold mb-1 group-hover:text-yellow-400 transition-colors duration-300">
-								সচেতনতা বৃদ্ধি কর্মসূচি ও সার্বিক প্রোগ্রামিং
+								সচেতনতা বৃদ্ধির কার্যক্রম ও সামাজিক প্রচার অভিযান
 							</h3>
 						</div>
 					</div>

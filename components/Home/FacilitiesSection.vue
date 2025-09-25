@@ -1,7 +1,45 @@
 <script setup>
-	// Initialize AOS when component mounts
+	
+    const isLoading = ref(false);
+    const data      = ref([]);
+
+
+    const loadData  = async() => {
+        isLoading.value = true ;
+        try{
+            const apiData = await $fetchAdmin(`frontend-contents/slug`,{
+                method : 'GET',
+                params : {
+                       slug  : "homepage-infra"
+                }  
+            })
+            data.value    = apiData.data;
+            console.log(data.value.description)
+        }
+        catch(e){
+            console.log(`The error is ${e}`)
+        }
+        finally{
+            isLoading.value = false
+        }   
+    }
+
+    const titleLines = computed(() => {
+        if(!data.value.title) return ["" , ""];
+
+        const arrayWords = (data.value.title).split(" "); 
+        const lineOne    = arrayWords.slice(0,2).join(" ") ;
+        const lineTwo    = arrayWords.slice(2).join(" ");
+        return [lineOne , lineTwo];
+    })
+
+    const firstLine = computed(() => titleLines.value[0]);
+    const lastLine  = computed(() => titleLines.value[1]);
+
+
+
+
 	onMounted(() => {
-		// Initialize AOS if it's available
 		if (typeof AOS !== "undefined") {
 			AOS.init({
 				duration: 1000,
@@ -10,6 +48,7 @@
 				easing: "ease-in-out",
 			})
 		}
+        loadData();
 	})
 </script>
 
@@ -30,24 +69,25 @@
 						data-aos="slide-right"
 						data-aos-duration="800"
 						data-aos-delay="500">
-						আমাদের অবকাঠামো
+						{{firstLine ? firstLine : 'আমাদের অবকাঠামো'}}
 					</span>
 					<span
 						class="text-gray-800 hover:text-teal-700 transition-colors duration-300"
 						data-aos="slide-right"
 						data-aos-duration="800"
 						data-aos-delay="600">
-						সম্পর্কে জানুন
+						{{lastLine ? lastLine : 'সম্পর্কে জানুন'}}
 					</span>
 				</h1>
 			</div>
 
 			<p
+                v-html="data?.description ? data?.description : 'আমরা প্রতিবন্ধী ব্যক্তিদের জন্য এমন একটি সহযোগিতামূলক পরিকাঠামো গড়ে তুলেছি, যেখানে তাঁদের জীবনের প্রতিটি দিককে সমর্থন করার ব্যবস্থা আছে।'"
 				class="text-gray-600 max-w-2xl text-left leading-relaxed hover:text-gray-800 transition-colors duration-300"
 				data-aos="fade-left"
 				data-aos-duration="1000"
 				data-aos-delay="700">
-				আমরা প্রতিবন্ধী ব্যক্তিদের জন্য এমন একটি সহযোগিতামূলক পরিকাঠামো গড়ে তুলেছি, যেখানে তাঁদের জীবনের প্রতিটি দিককে সমর্থন করার ব্যবস্থা আছে।
+				
 			</p>
 		</div>
 

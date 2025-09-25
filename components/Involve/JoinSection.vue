@@ -13,19 +13,18 @@
 					<div class="space-y-4 text-sm leading-relaxed">
 						<div class="flex items-start space-x-3">
 							<div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-							<p>আমাদের অফিসে সরাসরি যোগাযোগের মাধ্যমে আপনার অভিজ্ঞতার ইতিহাসের মাধ্যমে আমাদের পরিচয়।</p>
+							<p>আমাদের অফিসে সরাসরি যোগাযোগ করুন অথবা অফিসিয়াল ইমেইলের মাধ্যমে আবেদন পাঠান।</p>
 						</div>
 
 						<div class="flex items-start space-x-3">
 							<div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
-							<p>আমাদের জীবনযাত্রা, আদর্শবোধ তিনি এবং কীভাবে আপনার জ্ঞান দিয়ে চায় তা উল্লেখ করুন।</p>
+							<p>আপনার জীবনবৃত্তান্ত, আগ্রহের ক্ষেত্র এবং কীভাবে অবদান রাখতে চান তা উল্লেখ করুন।</p>
 						</div>
 
 						<div class="flex items-start space-x-3">
 							<div class="w-2 h-2 bg-yellow-400 rounded-full mt-2 flex-shrink-0"></div>
 							<p>
-								আমাদের স্বেচ্ছাসেবী নও সামাজিক যোগাযোগের মাধ্যমে নিয়মিত আপডেটে প্রাপ্ত—চেষ্টা নিয়ম, যেমন সামাজিকে সাহায্য এ প্রশিক্ষণের সুযোগ পাবেন
-								আপনি।
+								* আমাদের ওয়েবসাইট বা সামাজিক যোগাযোগ মাধ্যমে নিয়মিত আপডেট থাকুন-নতুন নিয়োগ, স্বেচ্ছাসেবক আইন ও প্রশিক্ষণের সুযোগ সম্পর্কে জানতে।
 							</p>
 						</div>
 					</div>
@@ -33,8 +32,7 @@
 					<!-- Quote Section -->
 					<div class="mt-12 p-6 border-l-4 border-yellow-400 bg-black bg-opacity-30 rounded-r-lg">
 						<p class="text-sm italic leading-relaxed">
-							"প্রত্যাশা' হৃদয়ে নেওয়া শর্ত তৈরির দর্শন যা, এটি একটি সীমাবদ্ধতা। আমাদের সেবা পারে করে আপনার জেতার বরণে পাবেন কর্তৃত্বে অংশ, যা সমাজকে
-							আরো মানবিক, সহযোগিতামূলক এবং স্বপ্নকেন্দ্রিক গড়ে তুলবে।"
+							‘প্রত্যাশা’ শুধুই সেবা প্রদানে মোহিত নয়, এটি একটি জীবনদর্শন। আমাদের সঙ্গে কাজ করে আপনি হবেন সেই পরিবর্তনের অংশ, যা সমাজকে আরো মানবিক, অন্তর্ভুক্তিমূলক এবং সুন্দর করে গড়ে তুলবে।**
 						</p>
 						<p class="text-yellow-400 font-semibold mt-4 text-right text-xs">- প্রত্যাশা টিম</p>
 					</div>
@@ -52,7 +50,7 @@
 									<i class="pi pi-heart text-red-500 text-xl"></i>
 								</div>
 								<div>
-									<h3 class="font-semibold text-gray-800 text-xs">মানবিক সেবাজীবী ও সমালোচনাকারী দৃষ্টিকোণ</h3>
+									<h3 class="font-semibold text-gray-800 text-xs">মানবিক মনোভাব ও সহানুভূতিশীল দৃষ্টিভঙ্গি</h3>
 								</div>
 							</div>
 
@@ -62,7 +60,7 @@
 									<i class="pi pi-sun text-orange-500 text-xl"></i>
 								</div>
 								<div>
-									<h3 class="font-semibold text-gray-800 text-xs">দায়িত্বশীল ও নেতৃত্বের সততা</h3>
+									<h3 class="font-semibold text-gray-800 text-xs">দায়িত্বশীলতা ও পেশাগত সততা</h3>
 								</div>
 							</div>
 
@@ -72,7 +70,7 @@
 									<i class="pi pi-users text-purple-500 text-xl"></i>
 								</div>
 								<div>
-									<h3 class="font-semibold text-gray-800 text-xs">সময়ে সময়ে কৃতজ্ঞতা দল ও উল্টোবর্ণী বিশ্বাসযোগ্যতা</h3>
+									<h3 class="font-semibold text-gray-800 text-xs">সমস্যা সমাধানের দক্ষতা এবং উদ্ভাবনী চিন্তাধারা</h3>
 								</div>
 							</div>
 
@@ -82,7 +80,7 @@
 									<i class="pi pi-graduation-cap text-blue-500 text-xl"></i>
 								</div>
 								<div>
-									<h3 class="font-semibold text-gray-800 text-xs">চিত্র দক্ষতা অবস্থা মানবিকতার ও সেবকের দায়িত্বশীল</h3>
+									<h3 class="font-semibold text-gray-800 text-xs">টিমে কাজ করার মানসিকতা ও নেতৃত্বের গুণাবলি</h3>
 								</div>
 							</div>
 						</div>

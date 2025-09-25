@@ -1,39 +1,87 @@
+<script setup>
+	const data = ref([])
+	const isLoading = ref(false)
+
+	const loadData = async () => {
+		isLoading.value = true
+
+		try {
+			const apiData = await $fetchAdmin(`frontend-contents/slug`, {
+				method: "GET",
+				params: {
+					slug: "homepage-effect",
+				},
+			})
+			data.value = apiData
+            console.log('asdasd' ,data.value)
+		} catch (e) {
+			console.log(`the error message is ${e}`)
+		} finally {
+			isLoading.value = false
+		}
+	}
+
+	const twoLines = computed(() => {
+		if (!data.value.title) return ["", ""]
+		const arrayData = data.value.title.split(" ")
+		const firstLine = arrayData.splice(0, 2).join(" ")
+		const secondLine = arrayData.splice(2).join(" ")
+		return [firstLine, secondLine]
+	})
+
+	const firstLinet = computed(() => twoLines.value[0])
+	const secondLinet = computed(() => twoLines.value[1])
+
+	onMounted(() => {
+		// Initialize AOS if it's available
+		if (typeof AOS !== "undefined") {
+			AOS.init({
+				duration: 1000,
+				once: true,
+				offset: 100,
+				easing: "ease-in-out",
+			})
+		}
+		loadData()
+	})
+</script>
+
 <template>
 	<div class="relative overflow-hidden" style="background-image: url('/images/slider/background-2.png')">
 		<!-- Background Pattern -->
-		<div class="absolute inset-0 opacity-10" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
-			
-		</div>
+		<div class="absolute inset-0 opacity-10" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100"></div>
 
 		<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 py-16 relative z-10">
 			<!-- Header Section -->
 			<div class="text-center mb-12" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
 				<div class="mb-4" data-aos="zoom-in" data-aos-duration="600" data-aos-delay="300">
-					<span class="bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-medium  hover:bg-yellow-400 transition-colors duration-300">
+					<span class="bg-yellow-500 text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-yellow-400 transition-colors duration-300">
 						আমাদের প্রভাব
 					</span>
 				</div>
 
-				<h1 class="text-2xl font-bold mb-6 text-white " data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
-					<span data-aos="slide-right" data-aos-duration="800" data-aos-delay="500"> একসাথে বদলে দিচ্ছি </span>
+				<h1 class="text-2xl font-bold mb-6 text-white" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+					<span data-aos="slide-right" data-aos-duration="800" data-aos-delay="500">{{ firstLinet ? firstLinet : "একসাথে বদলে দিচ্ছি" }} </span>
 					<br />
 					<span
 						class="text-yellow-400 hover:text-yellow-300 transition-colors duration-300"
 						data-aos="slide-left"
 						data-aos-duration="800"
 						data-aos-delay="600">
-						জীবন ধারা
+						{{ secondLinet ? secondLinet : "জীবন ধারা" }}
 					</span>
 				</h1>
 
 				<p
-					class="text-white/90 max-w-2xl mx-auto leading-relaxed  hover:text-white transition-colors duration-300"
+					v-html="
+						data.description
+							? data.description
+							: '<p>আমরা যাঁদের সেবা দিচ্ছি, তাঁদের প্রতিটি পদক্ষেপ আমাদের সমাজকে আরও অন্তর্ভুক্তিমূলক করে তোলে। আপনিও যুক্ত হন— প্রতিবন্ধী ব্যক্তিদের জীবনে স্থায়ীপরিবর্তন আনার এই অভিযানে।</p>'
+					"
+					class="text-white/90 max-w-2xl mx-auto leading-relaxed hover:text-white transition-colors duration-300"
 					data-aos="fade-up"
 					data-aos-duration="1000"
-					data-aos-delay="700">
-					আমরা যাঁদের সেবা দিচ্ছি, তাঁদের প্রতিটি পদক্ষেপ আমাদের সমাজকে আরও অন্তর্ভুক্তিমূলক করে তোলে। আপনিও যুক্ত হন— প্রতিবন্ধী ব্যক্তিদের জীবনে স্থায়ী
-					পরিবর্তন আনার এই অভিযানে।
-				</p>
+					data-aos-delay="700"></p>
 			</div>
 
 			<!-- Statistics Grid -->
@@ -60,7 +108,7 @@
 							২৫০০+
 						</div>
 
-						<p class="text-white/80 text-sm  group-hover:text-white transition-colors duration-300">মানুষ আমাদের সেবা গ্রহণ করেছেন</p>
+						<p class="text-white/80 text-sm group-hover:text-white transition-colors duration-300">মানুষ আমাদের সেবা গ্রহণ করেছেন</p>
 					</div>
 				</div>
 
@@ -85,7 +133,7 @@
 							data-aos-delay="900">
 							০৬
 						</div>
-						<p class="text-white/80 text-sm  group-hover:text-white transition-colors duration-300">উপজেলা জুড়ে কার্যক্রম</p>
+						<p class="text-white/80 text-sm group-hover:text-white transition-colors duration-300">উপজেলা জুড়ে কার্যক্রম</p>
 					</div>
 				</div>
 
@@ -111,7 +159,7 @@
 							৭৪+
 						</div>
 
-						<p class="text-white/80 text-sm  group-hover:text-white transition-colors duration-300">সক্রিয় স্বেচ্ছাসেবক</p>
+						<p class="text-white/80 text-sm group-hover:text-white transition-colors duration-300">সক্রিয় স্বেচ্ছাসেবক</p>
 					</div>
 				</div>
 
@@ -137,7 +185,7 @@
 							৮৫০+
 						</div>
 
-						<p class="text-white/80 text-sm  group-hover:text-white transition-colors duration-300">কর্মসংস্থান সৃষ্টির সফলতা</p>
+						<p class="text-white/80 text-sm group-hover:text-white transition-colors duration-300">কর্মসংস্থান সৃষ্টির সফলতা</p>
 					</div>
 				</div>
 			</div>
@@ -161,22 +209,23 @@
 
 						<div class="flex-1" data-aos="fade-left" data-aos-duration="800" data-aos-delay="700">
 							<h3
-								class="text-2xl font-bold text-black mb-3  group-hover:text-gray-800 transition-colors duration-300"
+								class="text-2xl font-bold text-black mb-3 group-hover:text-gray-800 transition-colors duration-300"
 								data-aos="fade-up"
 								data-aos-duration="600"
 								data-aos-delay="800">
 								আমাদের মিশনকে সহায়তা করুন
 							</h3>
 							<p
-								class="text-black/80 mb-6 leading-relaxed  group-hover:text-black transition-colors duration-300"
+								class="text-black/80 mb-6 leading-relaxed group-hover:text-black transition-colors duration-300"
 								data-aos="fade-up"
 								data-aos-duration="800"
 								data-aos-delay="900">
 								আপনার দান আমাদের সম্প্রদায়ে প্রতিবন্ধী ব্যক্তিদের জন্য অত্যন্ত প্রয়োজনীয় সেবা, সমর্থন এবং এডভোকেসি প্রদানে সাহায্য করে।
 							</p>
 
-							<NuxtLink to="donation-form"
-								class="bg-teal-800 hover:bg-teal-900 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300  hover:scale-105 hover:shadow-lg"
+							<NuxtLink
+								to="donation-form"
+								class="bg-teal-800 hover:bg-teal-900 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
 								data-aos="zoom-in"
 								data-aos-duration="600"
 								data-aos-delay="1000">
@@ -203,22 +252,23 @@
 
 						<div class="flex-1" data-aos="fade-right" data-aos-duration="800" data-aos-delay="800">
 							<h3
-								class="text-2xl font-bold text-white mb-3  group-hover:text-yellow-100 transition-colors duration-300"
+								class="text-2xl font-bold text-white mb-3 group-hover:text-yellow-100 transition-colors duration-300"
 								data-aos="fade-up"
 								data-aos-duration="600"
 								data-aos-delay="900">
 								স্বেচ্ছাসেবক হোন
 							</h3>
 							<p
-								class="text-white/80 mb-6 leading-relaxed  group-hover:text-white transition-colors duration-300"
+								class="text-white/80 mb-6 leading-relaxed group-hover:text-white transition-colors duration-300"
 								data-aos="fade-up"
 								data-aos-duration="800"
 								data-aos-delay="1000">
 								আমাদের ভোলান্টিয়ার সম্প্রদায়ে যোগ দিন এবং প্রতিবন্ধী ব্যক্তিদের জীবনে সরাসরি প্রভাব ফেলুন।
 							</p>
 
-							<NuxtLink to="volunteer-join-form"
-								class="bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-all duration-300  hover:scale-105 hover:shadow-lg"
+							<NuxtLink
+								to="volunteer-join-form"
+								class="bg-white hover:bg-gray-100 text-teal-800 px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:scale-105 hover:shadow-lg"
 								data-aos="zoom-in"
 								data-aos-duration="600"
 								data-aos-delay="1100">
@@ -232,26 +282,7 @@
 	</div>
 </template>
 
-<script setup>
-	
-
-	// Initialize AOS when component mounts
-	onMounted(() => {
-		// Initialize AOS if it's available
-		if (typeof AOS !== "undefined") {
-			AOS.init({
-				duration: 1000,
-				once: true,
-				offset: 100,
-				easing: "ease-in-out",
-			})
-		}
-	})
-</script>
-
 <style scoped>
-	
-
 	/* Custom animation styles */
 	@keyframes pulse-glow {
 		0%,

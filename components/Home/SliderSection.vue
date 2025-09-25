@@ -1,3 +1,90 @@
+<script setup>
+	const isLoading = ref(false)
+	const data = ref([])
+
+	const loadData = async () => {
+		isLoading.value = true
+		try {
+			const getData = await $fetchAdmin(`frontend-contents/slug`, {
+				method: "GET",
+				params: {
+					slug: "homepage-nav",
+				},
+			})
+
+			data.value = getData.data
+			console.log(data.value)
+		} catch (e) {
+			console.log(`get message error ${e}`)
+		} finally {
+			isLoading.value = false
+		}
+	}
+
+	const titleLines = computed(() => {
+		if (!data.value?.title) return ["", ""]
+
+		const words = data.value.title.split(" ")
+		const firstLine = words.slice(0, 2).join(" ")
+		const secondLine = words.slice(2).join(" ")
+		return [firstLine, secondLine]
+	})
+
+	const firstLine = computed(() => titleLines.value[0])
+	const secondLine = computed(() => titleLines.value[1])
+
+	// Bengali number converter function
+	const toBengaliNumber = (num) => {
+		const bengaliDigits = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"]
+		return num
+			.toString()
+			.split("")
+			.map((digit) => bengaliDigits[parseInt(digit)])
+			.join("")
+	}
+
+	// Counter animation function
+	const animateCounter = (element, target) => {
+		const increment = target / 100
+		let current = 0
+
+		const timer = setInterval(() => {
+			current += increment
+			if (current >= target) {
+				element.textContent = toBengaliNumber(target)
+				clearInterval(timer)
+			} else {
+				element.textContent = toBengaliNumber(Math.floor(current))
+			}
+		}, 20)
+	}
+
+	// Initialize counter animations
+	const initCounters = () => {
+		const counters = document.querySelectorAll(".counter")
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						const target = parseInt(entry.target.getAttribute("data-target"))
+						animateCounter(entry.target, target)
+						observer.unobserve(entry.target)
+					}
+				})
+			},
+			{ threshold: 0.5 }
+		)
+
+		counters.forEach((counter) => observer.observe(counter))
+	}
+
+	onMounted(async () => {
+		await nextTick()
+		initCounters()
+		loadData()
+	})
+</script>
+
 <template>
 	<div class="hero-bg flex items-center w-full relative overflow-hidden">
 		<!-- Dark Overlay -->
@@ -36,18 +123,20 @@
 
 					<!-- Main Heading -->
 					<h1 class="text-4xl sm:text-5xl lg:text-3xl xl:text-4xl font-bold leading-tight" data-aos="fade-down" data-aos-delay="400" data-aos-once="false">
-						<span class="inline-block typing-animation">সবার জন্য</span><br />
-						<span class="text-yellow-400 inline-block glow-text">সমান সুযোগ</span><br />
+						<span class="inline-block typing-animation">{{ firstLine ? firstLine : "সবার জন্য" }}</span
+						><br />
+						<span class="text-yellow-400 inline-block glow-text">{{ secondLine ? secondLine : "সমান সুযোগ" }}</span
+						><br />
 					</h1>
 
 					<!-- Description -->
-					<p
-						class="text-base sm:text-lg lg:text-base xl:text-lg text-gray-200 max-w-2xl lg:max-w-xl leading-relaxed mx-auto lg:mx-0"
-						data-aos="fade-up"
-						data-aos-delay="600"
-						data-aos-once="false">
-						প্রতিবন্ধী ব্যক্তিদের অধিকার ও সেবা নিশ্চিতে আমরা কাজ করছি নিরলসভাবে। আসুন, একসাথে গড়ে তুলি এমন এক সমাজ, যেখানে কেউ পিছিয়ে থাকবে না।
-					</p>
+
+					<p v-html="data?.description ? data?.description : '<p>প্রতিবন্ধী ব্যক্তিদের অধিকার ও সেবা নিশ্চিতে আমরা কাজ করছি নিরলসভাবে। আসুন, একসাথে গড়ে তুলি এমন এক সমাজ, যেখানে কেউ পিছিয়ে থাকবে না।</p>'"
+                        class="text-base sm:text-lg lg:text-base xl:text-lg text-gray-200 max-w-2xl lg:max-w-xl leading-relaxed mx-auto lg:mx-0"
+                        data-aos="fade-up"
+                        data-aos-delay="600"
+                        data-aos-once="false">
+                    </p>
 
 					<!-- CTA Buttons -->
 					<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start" data-aos="fade-up" data-aos-delay="800" data-aos-once="false">
@@ -103,7 +192,7 @@
 						<!-- Background Child Image (larger) -->
 						<div class="relative">
 							<img
-								src="/images/slider/1.png"
+								:src="data && data.media && data.media.length > 0 ? data.media[0].original_url : '/images/slider/1.png'"
 								alt="Child with disability at school"
 								class="w-72 h-80 sm:w-80 sm:h-96 lg:w-96 lg:h-[400px] object-cover rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105" />
 							<!-- Image overlay effect -->
@@ -174,58 +263,6 @@
 		</div>
 	</div>
 </template>
-
-<script setup>
-	// Bengali number converter function
-	const toBengaliNumber = (num) => {
-		const bengaliDigits = ["০", "১", "২", "৩", "৪", "৫", "৬", "৭", "৮", "৯"]
-		return num
-			.toString()
-			.split("")
-			.map((digit) => bengaliDigits[parseInt(digit)])
-			.join("")
-	}
-
-	// Counter animation function
-	const animateCounter = (element, target) => {
-		const increment = target / 100
-		let current = 0
-
-		const timer = setInterval(() => {
-			current += increment
-			if (current >= target) {
-				element.textContent = toBengaliNumber(target)
-				clearInterval(timer)
-			} else {
-				element.textContent = toBengaliNumber(Math.floor(current))
-			}
-		}, 20)
-	}
-
-	// Initialize counter animations
-	const initCounters = () => {
-		const counters = document.querySelectorAll(".counter")
-		const observer = new IntersectionObserver(
-			(entries) => {
-				entries.forEach((entry) => {
-					if (entry.isIntersecting) {
-						const target = parseInt(entry.target.getAttribute("data-target"))
-						animateCounter(entry.target, target)
-						observer.unobserve(entry.target)
-					}
-				})
-			},
-			{ threshold: 0.5 }
-		)
-
-		counters.forEach((counter) => observer.observe(counter))
-	}
-
-	onMounted(async () => {
-		await nextTick()
-		initCounters()
-	})
-</script>
 
 <style scoped>
 	.hero-bg {

@@ -1,3 +1,51 @@
+<script setup>
+	const selected = ref(null)
+    const yourVideoData = ref([
+		{
+			id: 1,
+			hl: "Prottaysha | Donation Management System",
+			img: "/images/banner/banner-about.png",
+			url: "https://www.youtube.com/embed/9pqdJ5Qmfn4?si=YoeaubtKd3OcDwET",
+		},
+	])
+
+    const data = ref([]);
+    const isLoading = ref(false);
+
+    const loadData = async() => {
+        isLoading.value = true;
+        try{
+            const apiData = await $fetchAdmin('frontend-contents/slug',
+                {
+                    method : 'GET',
+                    params  : {
+                            slug : 'homepage-about' 
+                    }
+                }
+            )
+            data.value = apiData.data
+            yourVideoData.value[0].url = apiData.data.link
+            yourVideoData.value[0].img = apiData.data.media[0].original_url
+
+        }
+        catch(e){
+            console.log(`error message is ${e}`)
+        }
+        finally{
+            isLoading.value = false;
+        }
+    };
+
+    
+
+    onMounted(async () => {
+		loadData()
+	})
+   
+</script>
+
+
+
 <template>
 	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 my-12">
 		<div class="flex flex-col lg:flex-row gap-8">
@@ -12,8 +60,8 @@
 						</div>
 
 						<h1 class="text-2xl font-bold mb-4">
-							<span class="text-[#020039]">আমরা কে</span>
-						</h1>
+                            <span class="text-[#020039]">{{ data.title ? data.title : 'আমরা কে' }}</span>
+                        </h1>
 
 						<p class="text-gray-600 mb-4 leading-relaxed">
 							‘প্রত্যাশা’ একটি মানবসেবা প্রতিষ্ঠান, যা সমাজের প্রতিবন্ধীদের জন্য একটি আর্দশ সবোমূলক র্কাযক্রম পরচিালতি করে। এই প্রতিষ্ঠানে একত্রিত
@@ -54,17 +102,7 @@
 	<div class="h-[1px] w-full bg-[#E0E0E0]"></div>
 </template>
 
-<script setup>
-	const selected = ref(null)
-    const yourVideoData = ref([
-		{
-			id: 1,
-			hl: "Prottaysha | Donation Management System",
-			img: "/images/banner/banner-about.png",
-			url: "https://www.youtube.com/embed/9pqdJ5Qmfn4?si=YoeaubtKd3OcDwET",
-		},
-	])
-</script>
+
 
 <style scoped>
 	

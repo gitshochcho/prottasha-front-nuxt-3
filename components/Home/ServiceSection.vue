@@ -1,3 +1,42 @@
+<script setup>
+	
+    const data = ref([])
+	const isLoading = ref(false)
+
+	const loadData = async () => {
+		isLoading.value = true
+
+		try {
+			const apiData = await $fetchAdmin(`frontend-contents/slug`, {
+				method: "GET",
+				params: {
+					slug: "homepage-service",
+				},
+			})
+			data.value = apiData
+            console.log('asdasd' ,data.value)
+		} catch (e) {
+			console.log(`the error message is ${e}`)
+		} finally {
+			isLoading.value = false
+		}
+	}
+	
+	onMounted(() => {
+		// Initialize AOS if it's available
+		if (typeof AOS !== "undefined") {
+			AOS.init({
+				duration: 1000,
+				once: true,
+				offset: 100,
+				easing: "ease-in-out",
+			})
+		};
+        loadData();
+	})
+</script>
+
+
 <template>
 	<div class="container mx-auto px-4 sm:px-6 md:px-8 lg:px-12 my-12">
 		<!-- Header Section -->
@@ -14,14 +53,15 @@
 				data-aos="fade-up"
 				data-aos-duration="800"
 				data-aos-delay="300">
-				আমরা যা করি
+				{{data.title ? data.title : 'আমরা যা করি'}}
 			</h1>
 			<p
+                v-html="data.description ? data.description : '<p>প্রত্যাশা একটি মানবিক সেবামূলক প্রতিষ্ঠান হিসেবে সমাজের অবহেলিত প্রতিবন্ধীদের জন্য বহুমাত্রিক সহায়তামূলক কার্যক্রম পরিচালনা করে।</p>'"
 				class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed  hover:text-gray-800 transition-colors duration-300"
 				data-aos="fade-up"
 				data-aos-duration="1000"
 				data-aos-delay="400">
-				'প্রত্যাশা' একটি মানবিক সেবামূলক প্রতিষ্ঠান হিসেবে সমাজের অবহেলিত প্রতিবন্ধীদের জন্য বহুমাত্রিক সহায়তামূলক কার্যক্রম পরিচালনা করে।
+				
 			</p>
 		</div>
 
@@ -235,22 +275,7 @@
 	</div>
 </template>
 
-<script setup>
-	import { onMounted } from "vue"
 
-	// Initialize AOS when component mounts
-	onMounted(() => {
-		// Initialize AOS if it's available
-		if (typeof AOS !== "undefined") {
-			AOS.init({
-				duration: 1000,
-				once: true,
-				offset: 100,
-				easing: "ease-in-out",
-			})
-		}
-	})
-</script>
 
 <style scoped>
 	
