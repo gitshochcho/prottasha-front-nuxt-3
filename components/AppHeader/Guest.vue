@@ -241,7 +241,7 @@
 				<!-- CTA Buttons & Hamburger -->
 				<div class="flex items-between space-x-4">
                     <NuxtLink
-                        :to="`${useRuntimeConfig().public.API_URL_ADMIN || ''}login`"
+                        :to="`${useRuntimeConfig().public.API_URL_ADMIN || ''}`"
                         :class="[
                             'hidden lg:block transition-all duration-300 border border-gray-300  rounded-full hover:bg-gray-100 ',
                             isScrolled ? 'text-sm px-4 py-1.5' : 'text-base px-5 py-2',
