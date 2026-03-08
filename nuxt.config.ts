@@ -41,7 +41,7 @@ const MyPreset = definePreset(Aura, {
 export default defineNuxtConfig({
     ssr: false,
     nitro: {
-        preset: 'static',
+        preset: 'node',
     },
     runtimeConfig: {
         public: {
